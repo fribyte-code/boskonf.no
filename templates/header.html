@@ -1,0 +1,14 @@
+<header class="header">
+  <a class="logo" href="/">Logo</a>
+  <nav>
+    <ul>
+      {% for the_page in config.extra.nav %}
+        {% set path = the_page.path | replace(from="@/", to="") %}
+        {% set page = get_page(path=path) %}
+        <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+      {% endfor %}
+      {# TODO: Add ticket info page #}
+      <li><a class="btn primary" href="#">Billett</a></li>
+    </ul>
+  </nav>
+</header>

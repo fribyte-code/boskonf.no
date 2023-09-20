@@ -1,0 +1,46 @@
+<html lang="{{ lang }}">
+  <head>
+      {# TODO: Get open graph cover #}
+
+      {% block head %} 
+        {% set title = config.title %}
+        {% set description = page.description | default(value=config.description) %}
+      {% endblock head %}
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <meta name="theme-color" content="#800000">
+      <meta name="description" content="{{ page.description | default(value=config.description ) }}">
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="{{ title }}">
+      <meta name="twitter:description" content="{{ page.description | default(value=config.description ) }}">
+      <meta property="og:title" content="{{ title }}">
+      <meta property="og:type" content="website">
+      <meta property="og:description" content="{{ page.description | default(value=config.description ) }}">
+      <meta property="og:url" content="{% if current_url %}{{ current_url | safe }}{% else %}{{ config.title }}{% endif %}">
+      <meta name="apple-mobile-web-app-capable" content="no">
+      <meta name="apple-mobile-web-app-status-bar-style" content="#800000">
+
+
+      <link rel="preload" href="{{ get_url(path="main.css") | safe }}" as="style"/> 
+      <meta name="color-scheme" content="light dark">
+
+      <link rel="stylesheet" href="{{ get_url(path="main.css") | safe }}">
+
+      <link href="{{ get_url(path="rss.xml") | safe }}" rel="feed">
+      <title>{{ title }}</title>
+  </head>
+
+  <body>
+    <div class="container">
+      {% include "header.html" %}
+      <main id="content">
+        {% block content %}
+        {% endblock content %}
+      </main>
+      {% include "footer.html" %} 
+    </div>
+    <script src="{{ get_url(path="js/theme.js") }}"></script>
+  </body>
+</html>

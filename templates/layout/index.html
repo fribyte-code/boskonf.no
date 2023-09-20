@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {% set title = section.title ~ ' - ' ~ config.title %}
+  {% set description = section.description %}
+{% endblock head %}
+
+{% block content %}
+  {{ section.content|safe }}
+{% endblock content %}
