@@ -1,0 +1,25 @@
+{% macro event(event) %}
+  <article class="">
+    <h3 class="">{{ event.title }}</h3>
+    <div class="">
+      <time datetime="{{ event.from }}">{{ event.from }}</time>
+      <time datetime="{{ event.to }}">{{ event.to }}</time>
+    </div>
+    <p class="">{{ event.description }}</p>
+  </article>
+{% endmacro event %}
+
+{% macro program() %}
+  {% set program = load_data(path="static/program.json") %}
+
+  <section class="program">
+    <h2 class="">Programmet</h2>
+    <ul class="">
+      {% for event in program | sort(attribute="from") %}
+        <li>
+          {{ self::event(event=event) }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endmacro progarm %}

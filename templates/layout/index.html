@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
 
 {% block head %}
   {% set title = section.title ~ ' - ' ~ config.title %}
@@ -10,4 +11,5 @@
     {{ section.content|safe }}
     <a class="btn primary" href="#">Meld deg på!</a>
   </section>
+  {{ macros::program() }}
 {% endblock content %}
