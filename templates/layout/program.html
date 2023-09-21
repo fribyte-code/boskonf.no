@@ -6,5 +6,29 @@
 {% endblock head %}
 
 {% block content %}
-  {{ page.content|safe }}
+  <section class="">
+    <h1 class="">{{ page.title }}</h1>
+    {{ page.content|safe }}
+  </section>
+
+  {% set program = load_data(path="static/program.json") %}
+
+  <section class="">
+    <h2 class="">Programmet</h2>
+    <ul class="">
+      {% for event in program | sort(attribute="from") %}
+        <li>
+          <article class="">
+            <h3 class="">{{ event.title }}</h3>
+            <div class="">
+              <time datetime="{{ event.from }}">{{ event.from }}</time>
+              <time datetime="{{ event.to }}">{{ event.to }}</time>
+            </div>
+            <p class="">{{ event.description }}</p>
+          </article>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
 {% endblock content %}
+
