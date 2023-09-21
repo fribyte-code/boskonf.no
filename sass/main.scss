@@ -68,6 +68,10 @@ body {
   padding: var(--default-padding);
 }
 
+.page-content {
+  margin-block: var(--default-padding);
+}
+
 a {
   box-sizing: border-box;
   display: inline;

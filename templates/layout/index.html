@@ -6,5 +6,8 @@
 {% endblock head %}
 
 {% block content %}
-  {{ section.content|safe }}
+  <section class="page-content">
+    {{ section.content|safe }}
+    <a class="btn primary" href="#">Meld deg på!</a>
+  </section>
 {% endblock content %}

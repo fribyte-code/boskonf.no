@@ -6,14 +6,14 @@
 {% endblock head %}
 
 {% block content %}
-  <section class="">
+  <section class="page-content">
     <h1 class="">{{ page.title }}</h1>
     {{ page.content|safe }}
   </section>
 
   {% set program = load_data(path="static/program.json") %}
 
-  <section class="">
+  <section class="program">
     <h2 class="">Programmet</h2>
     <ul class="">
       {% for event in program | sort(attribute="from") %}
