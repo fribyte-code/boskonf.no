@@ -85,6 +85,10 @@ a {
   }
 }
 
+h1 {
+  font-size: 2rem;
+}
+
 ::selection {
   background: var(--primary-color);
   color: var(--button-text);
