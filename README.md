@@ -27,4 +27,5 @@ Navn er TBD.
 - `type` har disse typene:
   - `info`
   - `talk`
+  - `lightning`
   - `tbd` (Kommer sikkert mer.)

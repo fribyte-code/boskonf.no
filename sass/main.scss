@@ -185,5 +185,27 @@ section.program ul {
     p {
       margin: 0;
     }
+
+    .type {
+      width: max-content;
+      height: max-content;
+      padding: calc(var(--default-padding) / 2);
+      border: 1px solid black;
+      box-shadow: 0.125em 0.25em black;
+      box-sizing: border-box;
+      font-weight: 500;
+
+      &.info {
+        background-color: cyan;
+      }
+
+      &.talk {
+        background-color: yellow;
+      }
+
+      &.lightning {
+        background-color: blue;
+      }
+    }
   }
 }
