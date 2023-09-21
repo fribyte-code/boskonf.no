@@ -146,3 +146,44 @@ header.header {
     @include animation-underscore;
   }
 }
+
+section.program ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+
+    &:nth-child(even) {
+      background-color: var(--odd-bg-color);
+    }
+  }
+
+  .event {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 0.25fr;
+    grid-template-areas: "time heading description type";
+
+    @media screen and (max-width: 640px) {
+      display: block;
+    }
+
+    &>* {
+      padding: var(--default-padding);
+
+    }
+
+    h3 {
+      grid-area: heading;
+      margin: 0;
+    }
+
+    .time {
+      grid-area: time;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

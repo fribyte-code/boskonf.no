@@ -1,9 +1,20 @@
 {% macro event(event) %}
-  <article class="">
+  <article class="event">
     <h3 class="">{{ event.title }}</h3>
-    <div class="">
-      <time datetime="{{ event.from }}">{{ event.from }}</time>
-      <time datetime="{{ event.to }}">{{ event.to }}</time>
+    <div class="event-time">
+      <time 
+        datetime="{{ event.from }}"
+        aria-label="Starter {{ event.from | date(format="%c")}}"
+      >
+        {{ event.from | date(format="%R") }}
+      </time>
+      –
+      <time
+       datetime="{{ event.to }}"
+      aria-label="Slutter {{ event.to | date(format="%c")}}"
+      >
+        {{ event.to | date(format="%R") }}
+      </time>
     </div>
     <p class="">{{ event.description }}</p>
   </article>
@@ -12,7 +23,7 @@
 {% macro program() %}
   {% set program = load_data(path="static/program.json") %}
 
-  <section class="program">
+  <section class="program page-content">
     <h2 class="">Programmet</h2>
     <ul class="">
       {% for event in program | sort(attribute="from") %}
