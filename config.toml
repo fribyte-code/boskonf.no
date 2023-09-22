@@ -1,4 +1,4 @@
-base_url = "https://example.com"
+base_url = "https://konferanse.fribyte.no"
 title = "Konferansen"
 
 compile_sass = true
