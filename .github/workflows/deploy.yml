@@ -19,13 +19,13 @@ jobs:
     - name: Build Zola site
       run: |
         zola build
-        #    - name: rsync files
-        # uses: burnett01/rsync-deployments@5.2
-        #with:
-        #switches: -avzr --delete
-        #path: public/
-        #remote_path: /home/fribyte/fribyte.no/public
-        #remote_host: ${{ secrets.HOST }}
-        #remote_user: ${{ secrets.USERNAME }}
-        #remote_key: ${{ secrets.KEY }}
-        #remote_port: ${{ secrets.PORT }}
+    - name: rsync files
+      uses: burnett01/rsync-deployments@5.2
+      with:
+        switches: -avzr --delete
+        path: public/
+        remote_path: /home/fribyte/konferanse/public
+        remote_host: ${{ secrets.SERVER_IP }}
+        remote_user: ${{ secrets.USERNAME }}
+        remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+        remote_port: ${{ secrets.PORT }}
