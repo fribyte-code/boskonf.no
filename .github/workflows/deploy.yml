@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@master
     - uses: taiki-e/install-action@v2
       with:
-        tool: zola@0.17.1
+        tool: zola@${{secrets.ZOLA_VERSION}}
     - name: Check Zola links
       run: |
         zola check
