@@ -4,15 +4,12 @@ description = "Her må det komme en skikkelig god beskrivelse"
 template = "layout/page.html"
 +++
 
-[friByte][fribyte] tilbyr sponsorer å treffe en haug av studenter, samt
-utviklere som allerede er i bransjen, på Bergen Open Source konferansen. Og vi
-håper jo selvsagt at de vil gjøre dagen enda bedre for dem! Alt ifra en liten
-lyntale om bedriften, litt logosokker og smågodt, og kanskje et par bonger el.
+[friByte][fribyte] gir sponsorer muligheten til å nå en bred målgruppe som inkluderer studenter og etablerte utviklere innen bransjen, under Bergen Open Source-konferansen. Vi ønsker selvsagt å gjøre konferansedagen enda mer minneverdig for dem! Dette kan inkludere alt fra en kort presentasjon av selskapet, til tilpassede logo-merkede sokker og godbiter, kanskje til og med noen overraskelser som gleder deltakerne(🎫🍺?).
 
-Vil dere også sponse konferansen?
+Ønsker du også å støtte konferansen som sponsor?
 
-Ta kontakt med Sindre i friByte på sindre.kjelsrud@fribyte.no.
+Ta kontakt med Sindre på 📨: [sindre.kjelsrud@fribyte.no](mailto:sindre.kjelsrud@fribyte.no).
 
-Vi har et begrenset antall minutter til å holde lyntaler.
+Vennligst merk at vi har et begrenset antall plasser tilgjengelig for lyntaler.
 
 [fribyte]: https://fribyte.no
