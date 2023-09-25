@@ -11,3 +11,5 @@ template = "layout/page.html"
 <!-- TODO: Noen må legge til faktiske kontaktopplysinger her -->
 - Ved problemer: Ring eller send melding til friByte-ansvarlig for Kvarteret, på
   tlf??
+- [Personvernserklæring](../personvern)
+
