@@ -23,7 +23,8 @@ Navn er TBD.
 }
 ```
 
-- Tidspunkt (`from` og `to`) burde absolutt ta med hele datoen og tidspunkt, det gjør det enklere å iterere på senere.
+- Tidspunkt (`from` og `to`) burde absolutt ta med hele datoen og tidspunkt, det
+  gjør det enklere å iterere på senere.
 - `type` har disse typene:
   - `info`
   - `talk`
