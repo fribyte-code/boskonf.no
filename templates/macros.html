@@ -42,3 +42,22 @@
     </ul>
   </section>
 {% endmacro progarm %}
+
+{% macro sponsors() %}
+  {% set sponsors = load_data(path="static/sponsors.json") %}
+
+  {% if sponsors|length > 0 %}
+    <section class="sponsors">
+      <h2 class="">Sponsor</h2>
+      <ul class="">
+        {% for sponsor in sponsors %}
+          <li aria-label="{{ sponsor.title }}" title="{{ sponsor.title }}">
+            <a href="{{ sponsor.url }}" target="_blank">
+              <img src="{{ get_url(path=sponsor.logo )}}" alt="{{ sponsor.title }} logo" />
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+{% endmacro sponsors %}
