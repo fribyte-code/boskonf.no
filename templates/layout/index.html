@@ -10,7 +10,7 @@
   {{ macros::countdown() }}
   <section class="page-content">
     {{ section.content|safe }}
-    <a class="btn primary" href="#">Meld deg på!</a>
+    <a class="btn primary" href="{{ config.extra.event_registration_link}}" target="_blank">Meld deg på!</a>
   </section>
   {{ macros::program() }}
 {% endblock content %}

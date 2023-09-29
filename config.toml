@@ -16,3 +16,4 @@ nav = [
   { path = "@/om.md", type = "page" },
 ]
 
+event_registration_link = "https://skjema.fribyte.no/index.php/371186"
