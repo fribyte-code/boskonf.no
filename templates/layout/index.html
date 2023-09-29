@@ -7,6 +7,7 @@
 {% endblock head %}
 
 {% block content %}
+  {{ macros::countdown() }}
   <section class="page-content">
     {{ section.content|safe }}
     <a class="btn primary" href="#">Meld deg på!</a>

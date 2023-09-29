@@ -236,3 +236,20 @@ section.program ul {
     }
   }
 }
+
+.countdown {
+  display: flex;
+  gap: var(--default-padding);
+  justify-content: center;
+  align-items: center;
+  background-color: var(--odd-bg-color);
+  padding: var(--default-padding);
+  font-weight: 500;
+}
+
+.countdown .number-wrapper {
+  .number {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}

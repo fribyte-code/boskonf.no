@@ -61,3 +61,50 @@
     </section>
   {% endif %}
 {% endmacro sponsors %}
+
+{% macro countdown() %}
+  <div class="countdown">
+    <abbr>BOS</abbr> starter om:
+    <div class="number-wrapper">
+      <div class="number" id="days">00</div>
+      <div class="text">dager</div>
+    </div>
+    <div class="number-wrapper">
+      <div class="number" id="hours">00</div>
+      <div class="text">timer</div>
+    </div>
+    <div class="number-wrapper">
+      <div class="number" id="minutes">00</div>
+      <div class="text">minutter</div>
+    </div>
+    <div class="number-wrapper">
+      <div class="number" id="seconds">00</div>
+      <div class="text">sekunder</div>
+    </div>
+  </div>
+  <script>
+    const targetDate = new Date('2023-11-02T16:30:00Z').getTime();
+
+    function updateCountdown() {
+      const currentDate = new Date().getTime();
+      const timeLeft = targetDate - currentDate;
+
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    setInterval(updateCountdown, 1000);
+
+    // Initial update
+    updateCountdown();
+  </script>
+
+
+{% endmacro countdown %}
