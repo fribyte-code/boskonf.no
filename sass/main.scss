@@ -168,6 +168,7 @@ section.program ul {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 0.25fr;
     grid-template-areas: "time heading description type";
+    position: relative;
 
     @media screen and (max-width: 640px) {
       display: block;
@@ -176,6 +177,9 @@ section.program ul {
     &>* {
       padding: var(--default-padding);
 
+      @media screen and (max-width: 640px) {
+        padding: calc(var(--default-padding) / 2);
+      }
     }
 
     h3 {
@@ -210,6 +214,12 @@ section.program ul {
 
       &.lightning {
         background-color: blue;
+      }
+
+      @media screen and (max-width: 640px) {
+        position: absolute;
+        top: var(--default-padding);
+        right: var(--default-padding);
       }
     }
   }
