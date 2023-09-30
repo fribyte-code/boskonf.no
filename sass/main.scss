@@ -99,6 +99,7 @@ header.header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-block-end: var(--default-padding);
 }
 
 .header ul {
