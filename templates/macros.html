@@ -24,7 +24,9 @@
       </time>
     </div>
     <p class="">{{ event.description }}</p>
-    <div class="type {{ event.type }}" aria-label="Type: {{ type }}">{{ type }}</div>
+    <div>
+      <div class="type {{ event.type }}" aria-label="Type: {{ type }}">{{ type }}</div>
+    </div>
   </article>
 {% endmacro event %}
 
