@@ -237,7 +237,8 @@ section.program ul {
   }
 }
 
-.countdown {
+.countdown,
+.countdown-wrapper {
   display: flex;
   gap: var(--default-padding);
   justify-content: center;
@@ -245,6 +246,10 @@ section.program ul {
   background-color: var(--odd-bg-color);
   padding: var(--default-padding);
   font-weight: 500;
+}
+
+.countdown {
+  flex-wrap: wrap;
 }
 
 .countdown .number-wrapper {
