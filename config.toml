@@ -1,5 +1,5 @@
 base_url = "https://konferanse.fribyte.no"
-title = "Konferansen"
+title = "Bergen Open Source"
 
 compile_sass = true
 
