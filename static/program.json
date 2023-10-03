@@ -8,8 +8,8 @@
     "type": "info"
   },
   {
-    "title": "En event",
-    "description": "En skikkelig god program/event beskrivelse",
+    "title": "OpenStreetMap hvem hva hvor",
+    "description": "Mathias Haugsbø er en dreven OSM bidragsyter. Her gir Mathias Et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:24:00",
     "to": "2023-09-20T20:24:00",
