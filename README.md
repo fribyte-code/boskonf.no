@@ -1,6 +1,4 @@
-# Konferanse
-
-Navn er TBD.
+# Bergen Open Source Konferansen
 
 ## Oppsett
 
