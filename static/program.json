@@ -1,18 +1,26 @@
 [
   {
     "title": "Dørene åpner",
-    "description": "En skikkelig god program/event beskrivelse",
+    "description": "Prøv å være tidlig ute!",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-19T17:30:00",
-    "to": "2023-09-19T18:00:00",
+    "from": "2023-09-19T18:30:00",
+    "to": "2023-09-19T17:00:00",
     "type": "info"
   },
   {
-    "title": "OpenStreetMap hvem hva hvor",
-    "description": "Mathias Haugsbø er en dreven OSM bidragsyter. Her gir Mathias Et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
+    "title": "Intro til makt for fri programvare-idealistar",
+    "description": "Nils Norman Haukås er en solo-gründer og medlem av ethicalsource.dev. Han vil ta dere med på en reise i verden rundt fri programvare med fokus på sosial og kapitalistisk makt.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T18:15:00",
-    "to": "2023-09-20T18:40:00",
+    "from": "2023-09-20T17:30:00",
+    "to": "2023-09-20T17:50:00",
+    "type": "talk"
+  },
+  {
+    "title": "OpenStreetMap hvem hva hvor",
+    "description": "Mathias Haugsbø er en dreven OSM bidragsyter. Her gir Mathias et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-09-20T17:55:00",
+    "to": "2023-09-20T18:30:00",
     "type": "talk"
   },
   {
