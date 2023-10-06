@@ -6,7 +6,7 @@ template = "layout/index.html"
 
 # Bli med på Bergens Første Åpen Kildekode  konferanse!
 
-Er du nysgjerrige på hva åpen kildekode er, viktigheten av det og hvorfor du bør ta del i det? Vi i [friByte][fribyte] syntes studenter bør få svar på dette, og hvorfor da ikke holde en konferanse i samme sleng?
+Er du nysgjerrig på hva åpen kildekode er, viktigheten av det og hvorfor du bør ta del i det? Vi i [friByte][fribyte] syntes du bør få svar på dette, så hvorfor da ikke holde en konferanse i samme sleng!
 
 Bergen Open Source tilbyr derfor foredrag fra blant annet utviklere i IT-bransjen, som har en massevis av erfaring innenfor dette feltet, samt et par sjeler som brenner litt ekstra for åpen kildekode!
 
