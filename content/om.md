@@ -8,8 +8,6 @@ template = "layout/page.html"
 - **Tid:** 2. november 2023, 16:30-20:30
 - **Sted:** Tivoli @ Kvarteret, [Olav Kyrres gate 49, Bergen](https://www.openstreetmap.org/node/6137059358)
 - **Mat:** Det blir servert mat, vennligst oppgi i påmelding ved eventuell allergi/andre hensyn!
-- **Drikke:** Det vil være åpen bar under konferansen, både med og uten alkohol.
-<!-- TODO: Noen må legge til faktiske kontaktopplysinger her -->
-- **Ved problemer:** Ring eller send melding til friByte-ansvarlig for Kvarteret, på
-  tlf??
+- **Drikke:** Vi har også folk i baren under konferansen, her serveres det både drikke med og uten alkohol.
+- **Ved problemer:** Ring eller send melding til Dan Joar, på [481 19 135](tel:48119135).
 - [**Personvernserklæring**](../personvern)
