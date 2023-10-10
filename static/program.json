@@ -3,7 +3,7 @@
     "title": "Dørene åpner",
     "description": "Prøv å være tidlig ute!",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-19T18:30:00",
+    "from": "2023-09-19T16:30:00",
     "to": "2023-09-19T17:00:00",
     "type": "info"
   },
