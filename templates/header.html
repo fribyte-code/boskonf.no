@@ -1,6 +1,6 @@
 <header class="header">
   <a class="logo" href="/">
-    <img src="../logo-rod.svg" alt="Logo" width="100px" />
+    {{ load_data(path="static/logo-rod.svg") | safe }}
   </a>
   <nav>
     <ul>

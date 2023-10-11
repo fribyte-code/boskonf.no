@@ -102,6 +102,10 @@ header.header {
   margin-block-end: var(--default-padding);
 }
 
+.header .logo {
+  width: 120px;
+}
+
 .header ul {
   list-style: none;
   padding: 0;
