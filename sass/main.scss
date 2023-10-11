@@ -104,6 +104,10 @@ header.header {
 
 .header .logo {
   width: 120px;
+
+  svg * {
+    fill: var(--primary-color);
+  }
 }
 
 .header ul {
@@ -217,6 +221,7 @@ section.program ul {
       box-shadow: 0.125em 0.25em black;
       box-sizing: border-box;
       font-weight: 500;
+      color: black;
 
       &.info {
         background-color: cyan;
