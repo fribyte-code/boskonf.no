@@ -168,10 +168,15 @@ section.program ul {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 1fr 0.25fr;
     grid-template-areas: "time heading description type";
-    position: relative;
+    column-gap: 0.25rem;
+    padding: calc(var(--default-padding) / 2);
 
     @media screen and (max-width: 640px) {
-      display: block;
+      grid-template-areas:
+        "heading heading heading type"
+        "time time time time"
+        "description description description description"
+      ;
     }
 
     &>* {
@@ -185,17 +190,23 @@ section.program ul {
     h3 {
       grid-area: heading;
       margin: 0;
+      padding-top: 0;
+      padding-inline: 0;
     }
 
-    .time {
+    .event-time {
       grid-area: time;
+      padding-inline: 0;
     }
 
     p {
+      grid-area: description;
       margin: 0;
+      padding-inline: 0;
     }
 
     .type {
+      grid-area: type;
       width: max-content;
       height: max-content;
       padding: calc(var(--default-padding) / 2);
@@ -214,12 +225,6 @@ section.program ul {
 
       &.lightning {
         background-color: blue;
-      }
-
-      @media screen and (max-width: 640px) {
-        position: absolute;
-        top: var(--default-padding);
-        right: var(--default-padding);
       }
     }
   }
