@@ -3,7 +3,7 @@
   <head>
       {# TODO: Get open graph cover #}
 
-      {% set logo = get_url(path="logo-rod.svg") %}
+      {% set logo = get_url(path="logo.svg") %}
 
       {% block head %} 
         {% set title = config.title %}
@@ -37,6 +37,9 @@
 
       <link href="{{ get_url(path="rss.xml") | safe }}" rel="feed">
       <title>{{ title }}</title>
+      <script>
+        {{ load_data(path="js/detect-theme.js") | safe }}
+      </script>
   </head>
 
   <body>
