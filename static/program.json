@@ -24,8 +24,8 @@
     "type": "talk"
   },
   {
-    "title": "TBD",
-    "description": "Hans Kristian Flaatten er plattform utvikler hos NAV, og en kjent bidragsyter innenfor Open Source miljøet.",
+    "title": "Profesjonell bruk av fri programvare",
+    "description": "Peter N. M. Hansteen er Senior Technical Specialist i TietoEvry Create Cloud, og er en mangeårig fri programvare-entusiast. Her vil Peter vise hvordan fri programvare brukes i bedrifter i stor skala, og trekke opp noen linjer fra historien frem til nåtid.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T18:25:00",
     "to": "2023-09-20T18:50:00",
@@ -33,10 +33,18 @@
   },
   {
     "title": "TBD",
-    "description": "Bjarte Johansen er data-scientist hos Equinor.",
+    "description": "Hans Kristian Flaatten er plattform utvikler hos NAV, og en kjent bidragsyter innenfor Open Source miljøet.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T18:55:00",
     "to": "2023-09-20T19:20:00",
+    "type": "talk"
+  },
+  {
+    "title": "TBD",
+    "description": "Bjarte Johansen er data-scientist hos Equinor.",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-09-20T19:25:00",
+    "to": "2023-09-20T19:50:00",
     "type": "talk"
   },
   {
