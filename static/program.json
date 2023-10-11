@@ -1,6 +1,6 @@
 [
   {
-    "title": "Dørene åpner",
+    "title": "Dørene åpner for påmeldte",
     "description": "Prøv å være tidlig ute!",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-19T16:30:00",
@@ -8,51 +8,75 @@
     "type": "info"
   },
   {
-    "title": "Intro til makt for fri programvare-idealistar",
-    "description": "Nils Norman Haukås er en solo-gründer og medlem av ethicalsource.dev. Han vil ta dere med på en reise i verden rundt fri programvare med fokus på sosial og kapitalistisk makt.",
+    "title": "Kort introduksjon",
+    "description": "Av friBytes egne Christian K. Engelsen.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T17:30:00",
-    "to": "2023-09-20T17:50:00",
+    "from": "2023-09-19T17:00:00",  
+    "to": "2023-09-20T17:10:00",
+    "type": "info"
+  },
+  {
+    "title": "Intro til makt for fri programvare-idealistar",
+    "description": "Nils Norman Haukås er en solo-gründer av BuilderHeart. Han vil ta dere med på en reise i verden rundt fri programvare med fokus på sosial og kapitalistisk makt.",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-09-20T17:10:00",
+    "to": "2023-09-20T17:30:00",
     "type": "talk"
   },
   {
     "title": "OpenStreetMap hvem hva hvor",
     "description": "Mathias Haugsbø er en dreven OSM bidragsyter. Her gir Mathias et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T17:55:00",
-    "to": "2023-09-20T18:20:00",
+    "from": "2023-09-20T17:35:00",
+    "to": "2023-09-20T17:55:00",
     "type": "talk"
   },
   {
     "title": "Profesjonell bruk av fri programvare",
     "description": "Peter N. M. Hansteen er Senior Technical Specialist i TietoEvry Create Cloud, og er en mangeårig fri programvare-entusiast. Her vil Peter vise hvordan fri programvare brukes i bedrifter i stor skala, og trekke opp noen linjer fra historien frem til nåtid.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T18:25:00",
-    "to": "2023-09-20T18:50:00",
+    "from": "2023-09-20T18:00:00",
+    "to": "2023-09-20T18:20:00",
     "type": "talk"
+  },
+  {
+    "title": "Matpause",
+    "description": "Tid for mat og drikke!",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-09-20T18:25:00",
+    "to": "2023-09-20T19:15:00",
+    "type": "info"
   },
   {
     "title": "TBD",
     "description": "Hans Kristian Flaatten er plattform utvikler hos NAV, og en kjent bidragsyter innenfor Open Source miljøet.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T18:55:00",
-    "to": "2023-09-20T19:20:00",
+    "from": "2023-09-20T19:20:00",
+    "to": "2023-09-20T19:40:00",
     "type": "talk"
   },
   {
     "title": "TBD",
     "description": "Bjarte Johansen er data-scientist hos Equinor.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T19:25:00",
-    "to": "2023-09-20T19:50:00",
+    "from": "2023-09-20T19:45:00",
+    "to": "2023-09-20T20:05:00",
     "type": "talk"
   },
   {
-    "title": "Flere talks",
-    "description": "Flere talks blir annonsert fortløpende",
+    "title": "Siste talk",
+    "description": "Blir annonsert fortløpende.",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-09-20T20:10:00",
+    "to": "2023-09-20T20:30:00",
+    "type": "talk"
+  },
+  {
+    "title": "Fest!🥳",
+    "description": "Takk og farvel! For de som vil være med utover kvelden blir vi igjen på Kvarteret!",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T20:30:00",
-    "to": "2023-09-20T21:00:00",
+    "to": "2023-09-20T00:00:00",
     "type": "talk"
   }
 ]
