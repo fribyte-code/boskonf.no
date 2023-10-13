@@ -17,7 +17,7 @@
   },
   {
     "title": "Intro til makt for fri programvare-idealistar",
-    "description": "Nils Norman Haukås er en solo-gründer av BuilderHeart. Han vil ta dere med på en reise i verden rundt fri programvare med fokus på sosial og kapitalistisk makt.",
+    "description": "Nils Norman Haukås er en solo-gründer av BuilderHeart. Nils vil ta dere med på en reise i verden rundt fri programvare med fokus på sosial og kapitalistisk makt.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T17:10:00",
     "to": "2023-09-20T17:30:00",
@@ -25,7 +25,7 @@
   },
   {
     "title": "OpenStreetMap hvem hva hvor",
-    "description": "Mathias Haugsbø er en dreven OSM bidragsyter. Her gir Mathias et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
+    "description": "Mathias Haugsbø er en dreven OSM bidragsyter, og friBytes nåværende leder. Her gir Mathias et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T17:35:00",
     "to": "2023-09-20T17:55:00",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Profesjonell bruk av fri programvare",
-    "description": "Peter N. M. Hansteen er Senior Technical Specialist i TietoEvry Create Cloud, og er en mangeårig fri programvare-entusiast. Her vil Peter vise hvordan fri programvare brukes i bedrifter i stor skala, og trekke opp noen linjer fra historien frem til nåtid.",
+    "description": "Peter N. M. Hansteen er Senior Technical Specialist i Tietoevry Create Cloud, og er en mangeårig fri programvare-entusiast. Her vil Peter vise hvordan fri programvare brukes i bedrifter i stor skala, og trekke opp noen linjer fra historien frem til nåtid.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T18:00:00",
     "to": "2023-09-20T18:20:00",
@@ -57,15 +57,15 @@
   },
   {
     "title": "TBD",
-    "description": "Bjarte Johansen er data-scientist hos Equinor.",
+    "description": "Bjarte Johansen er data-scientist hos Equinor, og tidligere medlem av friByte.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:45:00",
     "to": "2023-09-20T20:05:00",
     "type": "talk"
   },
   {
-    "title": "Siste talk",
-    "description": "Blir annonsert fortløpende.",
+    "title": "Eksperimentering for Grønnere Kode",
+    "description": "Kent Inge F. Simonsen er konsulent i Tietoevry og en av friBytes guruer. Kent Inge vil se på hvordan enkle eksperimenter kan hjelpe oss å bedre valg gitt målet om grønnere og mer effektiv kode.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T20:10:00",
     "to": "2023-09-20T20:30:00",
