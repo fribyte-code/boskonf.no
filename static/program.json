@@ -48,8 +48,8 @@
     "type": "info"
   },
   {
-    "title": "TBD",
-    "description": "Hans Kristian Flaatten er plattform utvikler hos NAV, og en kjent bidragsyter innenfor Open Source miljøet.",
+    "title": "Kom igang med åpen kildekode",
+    "description": "Hans Kristian Flaatten er plattform utvikler hos NAV, har brukt åpen kildekode hele sitt liv og vært en del av Node.js stiftelsen. I dette foredraget vil Hans Kristian snakke om sine erfaringer fra store og små åpen kildekode prosjekter om hvordan man kan komme i gang med bidrag eller til og med lage sine egne prosjekter.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:20:00",
     "to": "2023-09-20T19:40:00",
