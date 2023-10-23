@@ -56,8 +56,8 @@
     "type": "talk"
   },
   {
-    "title": "TBD",
-    "description": "Bjarte Johansen er data-scientist hos Equinor, og tidligere medlem av friByte.",
+    "title": "Min kamp med åpen kildekode",
+    "description": "Bjarte Johansen er data-scientist hos Equinor og et tidligere medlem av friByte. Bjarte vil snakke om noen av tingene han selv har gjort og hvordan Equinor benytter åpen kildekode.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:45:00",
     "to": "2023-09-20T20:05:00",
