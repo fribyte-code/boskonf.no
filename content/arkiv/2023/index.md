@@ -3,7 +3,7 @@ title = "Bergen Open Source 2023"
 description = "Bergen Open Source 2023 program og slides."
 template = "layout/page.html"
 [extra]
-program = "content/arkiv/2023.json"
+program = "content/arkiv/2023/program.json"
 +++
 
 <!-- TODO: Noen må skrive noe her  -->

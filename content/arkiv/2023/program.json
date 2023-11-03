@@ -11,7 +11,7 @@
     "title": "Kort introduksjon",
     "description": "Av friBytes egne Christian K. Engelsen.",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-19T17:00:00",  
+    "from": "2023-09-19T17:00:00",
     "to": "2023-09-20T17:10:00",
     "type": "info"
   },
@@ -21,7 +21,8 @@
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T17:10:00",
     "to": "2023-09-20T17:30:00",
-    "type": "talk"
+    "type": "talk",
+    "presentation": "/arkiv/2023/makt-programvare-idealistar.pdf"
   },
   {
     "title": "OpenStreetMap hvem hva hvor",
@@ -29,7 +30,8 @@
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T17:35:00",
     "to": "2023-09-20T17:55:00",
-    "type": "talk"
+    "type": "talk",
+    "presentation": "/arkiv/2023/osm.pdf"
   },
   {
     "title": "Profesjonell bruk av fri programvare",
@@ -37,7 +39,8 @@
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T18:00:00",
     "to": "2023-09-20T18:20:00",
-    "type": "talk"
+    "type": "talk",
+    "presentation": "/arkiv/2023/opensource_in_enterprise_environments.pdf"
   },
   {
     "title": "Matpause",
@@ -53,29 +56,22 @@
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:20:00",
     "to": "2023-09-20T19:40:00",
-    "type": "talk"
+    "type": "talk",
+    "presentation": "/arkiv/2023/kom-i-gang.pdf"
   },
   {
-    "title": "Min kamp med åpen kildekode",
-    "description": "Bjarte Johansen er data-scientist hos Equinor og et tidligere medlem av friByte. Bjarte vil snakke om noen av tingene han selv har gjort og hvordan Equinor benytter åpen kildekode.",
+    "title": "Eksperimentering for Grønnere Kode",
+    "description": "Kent Inge F. Simonsen er konsulent i Tietoevry og en av friBytes guruer. Kent Inge vil se på hvordan enkle eksperimenter kan hjelpe oss å bedre valg gitt målet om grønnere og mer effektiv kode.",
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:45:00",
     "to": "2023-09-20T20:05:00",
     "type": "talk"
   },
   {
-    "title": "Eksperimentering for Grønnere Kode",
-    "description": "Kent Inge F. Simonsen er konsulent i Tietoevry og en av friBytes guruer. Kent Inge vil se på hvordan enkle eksperimenter kan hjelpe oss å bedre valg gitt målet om grønnere og mer effektiv kode.",
-    "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T20:10:00",
-    "to": "2023-09-20T20:30:00",
-    "type": "talk"
-  },
-  {
     "title": "Fest!🥳",
     "description": "Takk og farvel! For de som vil være med utover kvelden blir vi igjen på Kvarteret!",
     "image": "TODO: path to some image in static dir",
-    "from": "2023-09-20T20:30:00",
+    "from": "2023-09-20T20:05:00",
     "to": "2023-09-20T00:00:00",
     "type": "info"
   }
