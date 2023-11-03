@@ -12,8 +12,8 @@
     {{ page.content|safe }}
   </section>
 
-  {% set program = load_data(path="static/program.json") %}
-
-  {{ macros::program() }}
+  {% if page.extra.program %}
+    {{ macros::program(programPath=page.extra.program) }}
+  {% endif %}
 {% endblock content %}
 

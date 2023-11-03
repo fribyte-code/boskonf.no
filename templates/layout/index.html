@@ -9,7 +9,12 @@
 {% block content %}
   <section class="page-content">
     {{ section.content|safe }}
-    <a class="btn primary" href="{{ config.extra.event_registration_link}}" target="_blank">Meld deg på!</a>
+
+    {% if section.extra.join_button %}
+      <a class="btn primary" href="{{ config.extra.event_registration_link}}" target="_blank">Meld deg på!</a>
+    {% endif %}
   </section>
-  {{ macros::program() }}
+  {% if section.extra.program %}
+    {{ macros::program(programPath=section.extra.program) }}
+  {% endif %}
 {% endblock content %}

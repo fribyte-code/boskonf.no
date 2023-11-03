@@ -28,8 +28,8 @@
   </article>
 {% endmacro event %}
 
-{% macro program() %}
-  {% set program = load_data(path="static/program.json") %}
+{% macro program(programPath) %}
+  {% set program = load_data(path=programPath) %}
 
   <section class="program page-content">
     <h2 class="">Programmet</h2>
