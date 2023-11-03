@@ -2,6 +2,8 @@
 title = "Forsiden"
 description = "Her må det komme en skikkelig god beskrivelse"
 template = "layout/index.html"
+[extra]
+is_archive_page = false
 +++
 
 # Bergen Open Source-konferanse
