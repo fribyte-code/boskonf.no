@@ -6,4 +6,4 @@ template = "layout/program.html"
 +++
 
 Det er ikke noe program som er klart enda. Ta en titt på en av våre
-[tidligere konferanser](@/tidligere/_index.md).
+[tidligere konferanser](@/arkiv/_index.md).
