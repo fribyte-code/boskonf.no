@@ -1,5 +1,5 @@
 +++
-title = "Tidligere konferanser"
+title = "Arkiv"
 description = "Tidligere Bergen Open Source konferanser"
 template = "layout/index.html"
 [extra]

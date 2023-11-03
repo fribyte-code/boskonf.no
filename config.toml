@@ -11,9 +11,10 @@ highlight_code = false
 [extra]
 
 nav = [
-  { path = "@/program.md", type = "page" },
-  { path = "@/bli-sponsor.md", type = "page" },
+  { path = "@/arkiv/_index.md", type = "section" },
   { path = "@/om.md", type = "page" },
 ]
 
 event_registration_link = "https://skjema.fribyte.no/index.php/371186"
+
+is_active = false
