@@ -7,7 +7,12 @@
   {% set type = typeMap[event.type] %}
 
   <article class="event">
-    <h3 class="">{{ event.title }}</h3>
+    <div class="event-heading">
+      <h3 class="">{{ event.title }}</h3>
+      {% if event.speaker is defined %}
+        <p>{{ event.speaker }}</p>
+      {% endif %}
+    </div>
     <div class="event-time">
       <time 
         datetime="{{ event.from }}"

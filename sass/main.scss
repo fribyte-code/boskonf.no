@@ -194,10 +194,13 @@ section.program ul {
       }
     }
 
-    h3 {
+    .event-heading {
       grid-area: heading;
-      margin: 0;
-      padding-inline: 0;
+
+      h3 {
+        margin: 0;
+        padding-inline: 0;
+      }
     }
 
     .event-time {
