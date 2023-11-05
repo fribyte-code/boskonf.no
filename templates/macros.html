@@ -32,7 +32,11 @@
       {{ event.description }}
       {% if event.presentation is defined %}
         <br>
-        <a href="{{ get_url(path=event.presentation )}}" target="_blank">Link til presentasjon</a>
+        <a href="{{ get_url(path=event.presentation )}}" target="_blank">Presentasjon (PDF)</a>
+      {% endif %}
+      {% if event.videoUrl is defined %}
+        <br>
+        <a href="{{ event.videoUrl }}" target="_blank">Video (WebM)</a>
       {% endif %}
     </p>
     <div class="type {{ event.type }}" aria-label="Type: {{ type }}">{{ type }}</div>

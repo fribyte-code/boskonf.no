@@ -34,7 +34,8 @@
     "from": "2023-09-20T17:35:00",
     "to": "2023-09-20T17:55:00",
     "type": "talk",
-    "presentation": "/arkiv/2023/osm.pdf"
+    "presentation": "/arkiv/2023/osm.pdf",
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Mathias_Haugsbo_boskonf_2023.webm"
   },
   {
     "title": "Profesjonell bruk av fri programvare",
