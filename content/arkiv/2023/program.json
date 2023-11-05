@@ -24,7 +24,8 @@
     "from": "2023-09-20T17:10:00",
     "to": "2023-09-20T17:30:00",
     "type": "talk",
-    "presentation": "/arkiv/2023/makt-programvare-idealistar.pdf"
+    "presentation": "/arkiv/2023/makt-programvare-idealistar.pdf",
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Nils_Norman_Haukaas_boskonf_2023.webm"
   },
   {
     "title": "OpenStreetMap hvem hva hvor",
@@ -45,7 +46,8 @@
     "from": "2023-09-20T18:00:00",
     "to": "2023-09-20T18:20:00",
     "type": "talk",
-    "presentation": "/arkiv/2023/opensource_in_enterprise_environments.pdf"
+    "presentation": "/arkiv/2023/opensource_in_enterprise_environments.pdf",
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Petter_N_M_Hansteen_boskonf_2023.webm"
   },
   {
     "title": "Matpause",
@@ -63,7 +65,8 @@
     "from": "2023-09-20T19:20:00",
     "to": "2023-09-20T19:40:00",
     "type": "talk",
-    "presentation": "/arkiv/2023/kom-i-gang.pdf"
+    "presentation": "/arkiv/2023/kom-i-gang.pdf",
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Hans_Kristian_Flaatten_boskonf_2023.webm"
   },
   {
     "title": "Eksperimentering for Grønnere Kode",
@@ -72,7 +75,8 @@
     "image": "TODO: path to some image in static dir",
     "from": "2023-09-20T19:45:00",
     "to": "2023-09-20T20:05:00",
-    "type": "talk"
+    "type": "talk",
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Kent_Inge_F_Simonsen_boskonf_2023.webm"
   },
   {
     "title": "Fest!🥳",

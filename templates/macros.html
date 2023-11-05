@@ -36,7 +36,11 @@
       {% endif %}
       {% if event.videoUrl is defined %}
         <br>
-        <a href="{{ event.videoUrl }}" target="_blank">Video (WebM)</a>
+        <video controls width="100%" preload="metadata">
+          <track kind="descriptions">{{ event.title }} video</track>
+          <source src="{{ event.videoUrl }}" type="video/webm">
+          Your browser does not support the video tag.
+        </video>
       {% endif %}
     </p>
     <div class="type {{ event.type }}" aria-label="Type: {{ type }}">{{ type }}</div>
