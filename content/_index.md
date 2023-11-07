@@ -2,15 +2,21 @@
 title = "Forsiden"
 description = "Her må det komme en skikkelig god beskrivelse"
 template = "layout/index.html"
+[extra]
+is_archive_page = false
 +++
 
-# Bli med på Bergen Open Source-konferansen!
+# Bergen Open Source-konferanse
 
-Er du nysgjerrig på hva åpen kildekode er, viktigheten av det og hvorfor du bør ta del i det? Vi i [friByte][fribyte] syntes du bør få svar på dette, så hvorfor da ikke holde en konferanse i samme sleng!
+Bergen Open Source er en (forhåpentligvis) årlig tech konferanse i Bergen drevet
+av studenter og andre frivillige. Konferansen har fokus på åpen kildekode og
+åpne data.
 
-Bergen Open Source tilbyr derfor foredrag fra blant annet utviklere i IT-bransjen, som har en massevis av erfaring innenfor dette feltet, samt et par sjeler som brenner litt ekstra for åpen kildekode!
+Første Bergen Open Source ble arrangert 2. november 2023, med stor suksess! Du
+kan lese mer om [2023-konferansen her](@/arkiv/2023/index.md). Vi håper på å
+kunne invitere dere til ny konferanse i 2024!
 
-Bli med på Bergen Open Source-konferansen, 2. November 2023, Tivoli @ Kvarteret, [Olav Kyrres gate 49, Bergen][kvarteret]!
-
-[fribyte]: https://fribyte.no
-[kvarteret]: https://www.openstreetmap.org/node/6137059358
+Konferansen ble startet av frivillige i [friByte](https://fribyte.no) med mål om
+å skape en møteplass for studenter og næringsliv i Bergen. Vi ønsker å skape en
+konferanse som er tilgjengelig for alle, og som kan være en arena for å lære
+bort og inspirere til åpen kildekode og åpne data.

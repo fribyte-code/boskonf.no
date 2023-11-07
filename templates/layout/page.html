@@ -11,4 +11,8 @@
     <h1>{{ page.title }}</h1>
     {{ page.content|safe }}
   </section>
+
+  {% if page.extra.program %}
+    {{ macros::program(programPath=page.extra.program) }}
+  {% endif %}
 {% endblock content %}
