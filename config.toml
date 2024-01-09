@@ -1,5 +1,6 @@
 base_url = "https://boskonf.no"
 title = "Bergen Open Source"
+description = "Årlig teknologikonferanse i Bergen om åpen kildekode og fri programvare"
 
 compile_sass = true
 
