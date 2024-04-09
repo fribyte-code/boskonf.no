@@ -8,8 +8,10 @@ template = "layout/page.html"
 
 Ønsker du også å støtte konferansen som sponsor?
 
-Ta kontakt med Sindre på 📨: [sindre.kjelsrud@fribyte.no](mailto:sindre.kjelsrud@fribyte.no).
+Ta kontakt med [pr-ansvarlig][pr-ansvarlig] på 📨: [pr-ansvarlig-mail][pr-ansvarlig-mail](mailto:sindre.kjelsrud@fribyte.no).
 
 Vennligst merk at vi har et begrenset antall plasser tilgjengelig for lyntaler.
 
 [fribyte]: https://fribyte.no
+[pr-ansvarlig]: Sindre
+[pr-ansvarlig-mail]: sindre.kjelsrud@fribyte.no

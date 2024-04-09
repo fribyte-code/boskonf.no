@@ -1,11 +1,19 @@
 {% macro event(event) %}
-  {% set typeMap = load_data(literal='{
-    "info": "Praktisk",
-    "talk": "Foredrag",
-    "lightning": "Lyntale"
-  }', format="json") %}
-  {% set type = typeMap[event.type] %}
-
+  {% if lang == 'no' %}
+    {% set typeMap = load_data(literal='{
+      "info": "Praktisk",
+      "talk": "Foredrag",
+      "lightning": "Lyntale"
+    }', format="json") %}
+    {% set type = typeMap[event.type] %}
+  {% elif lang == 'en' %}
+    {% set typeMap = load_data(literal='{
+      "info": "Practical",
+      "talk": "Talk",
+      "lightning": "Lightning talk"
+    }', format="json") %}
+    {% set type = typeMap[event.type] %}
+  {% endif %}
   <article class="event">
     <div class="event-heading">
       <h3 class="">{{ event.title }}</h3>
@@ -16,14 +24,14 @@
     <div class="event-time">
       <time 
         datetime="{{ event.from }}"
-        aria-label="Starter {{ event.from | date(format="%c")}}"
+        aria-label="{{ trans(key="starter", lang=lang) }} {{ event.from | date(format="%c")}}"
       >
         {{ event.from | date(format="%R") }}
       </time>
       –
       <time
        datetime="{{ event.to }}"
-      aria-label="Slutter {{ event.to | date(format="%c")}}"
+       aria-label="{{ trans(key="slutter", lang=lang) }} {{ event.to | date(format="%c")}}"
       >
         {{ event.to | date(format="%R") }}
       </time>
@@ -32,7 +40,7 @@
       {{ event.description }}
       {% if event.presentation is defined %}
         <br>
-        <a href="{{ get_url(path=event.presentation )}}" target="_blank">Presentasjon (PDF)</a>
+        <a href="{{ get_url(path=event.presentation )}}" target="_blank">{{ trans(key="presentasjon", lang=lang) }} (PDF)</a>
       {% endif %}
       {% if event.videoUrl is defined %}
         <br>
@@ -51,7 +59,7 @@
   {% set program = load_data(path=programPath) %}
 
   <section class="program page-content">
-    <h2 class="">Programmet</h2>
+    <h2 class="">{{ trans(key="programmet", lang=lang) }}</h2>
     <ul class="">
       {% for event in program | sort(attribute="from") %}
         <li>
@@ -60,14 +68,14 @@
       {% endfor %}
     </ul>
   </section>
-{% endmacro progarm %}
+{% endmacro program %}
 
 {% macro sponsors() %}
   {% set sponsors = load_data(path="static/sponsors.json") %}
 
   {% if sponsors|length > 0 %}
     <section class="sponsors">
-      <h2 class="">Sponsor</h2>
+      <h2 class="">{{ trans(key="sponsor", lang=lang) }}</h2>
       <ul class="">
         {% for sponsor in sponsors %}
           <li aria-label="{{ sponsor.title }}" title="{{ sponsor.title }}">
@@ -81,26 +89,66 @@
   {% endif %}
 {% endmacro sponsors %}
 
+{% macro translation(prefix="") %}
+  {% set url = "/" %}
+  {% set translation = [] %}
+  {% set swap_lang = "" %}
+  
+  {% if lang == "no" %}
+    {% set swap_lang = "en" %}
+    {% set url = "/en" %}
+  {% else %}
+    {% set swap_lang = "no" %}
+  {% endif %}
+  
+  {% if page %}
+    {% set translation = page.translations %}
+  {% elif section %}
+    {% set translation = section.translations %}
+  {% endif %}
+  
+  {% for trans in translation %}
+    {% if trans.lang == swap_lang %}
+      {% set url = trans.permalink %}
+    {% endif %}
+  {% endfor %}
+  
+  {% set swap_lang_obj = load_data(literal='
+    {
+      "no": "🇳🇴 Norsk",
+      "en": "🇺🇸 English"
+    }
+  ', format="json") %}
+  
+  <div class="{{ prefix }}translation">
+    {% if translation|length > 0 %}
+      <a class="translation__link" href="{{ url }}" hreflang="{{ swap_lang }}">
+         <span lang="{{ swap_lang }}">{{ swap_lang_obj[swap_lang] }}</span>
+      </a>
+    {% endif %}
+  </div>
+{% endmacro %}
+
 {% macro countdown() %}
   <!-- NOTE: Denne fungerer ikke riktig -->
   <div class="countdown">
-    <span><abbr title="Bergen Open Source">BOS</abbr> starter om:</span>
+    <span><abbr title="Bergen Open Source">BOS</abbr> {{ trans(key="starter_om", lang=lang) }}:</span>
     <div class="countdown-wrapper">
       <div class="number-wrapper">
         <div class="number" id="days">00</div>
-        <div class="text">dager</div>
+        <div class="text">{{ trans(key="dager", lang=lang) }}</div>
       </div>
       <div class="number-wrapper">
         <div class="number" id="hours">00</div>
-        <div class="text">timer</div>
+        <div class="text">{{ trans(key="timer", lang=lang) }}</div>
       </div>
       <div class="number-wrapper">
         <div class="number" id="minutes">00</div>
-        <div class="text">minutter</div>
+        <div class="text">{{ trans(key="minutter", lang=lang) }}</div>
       </div>
       <div class="number-wrapper">
         <div class="number" id="seconds">00</div>
-        <div class="text">sekunder</div>
+        <div class="text">{{ trans(key="sekunder", lang=lang) }}</div>
       </div>
     </div>
   </div>
@@ -128,4 +176,3 @@
     updateCountdown();
   </script>
 {% endmacro countdown %}
-
