@@ -8,10 +8,8 @@ template = "layout/page.html"
 
 Do you also want to support the conference as a sponsor?
 
-Contact Sindre at 📨: [sindre.kjelsrud@fribyte.no][pr-ansvarlig-mail].
+Contact Sindre at 📨: [sindre.kjelsrud@fribyte.no](mailto:sindre.kjelsrud@fribyte.no).
 
 Please note that we have a limited number of spots available for lightning talks.
 
 [fribyte]: https://fribyte.no
-[pr-ansvarlig]: Sindre
-[pr-ansvarlig-mail]: mailto:sindre.kjelsrud@fribyte.no
