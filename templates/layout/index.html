@@ -15,7 +15,12 @@
     {% endif %}
   </section>
   {% if section.extra.is_archive_page %}
-    {% set section = get_section(path="arkiv/_index.md") %}
+    {% if lang == "no" %}
+      {% set section = get_section(path="arkiv/_index.md") %}
+    {% endif %}
+    {% if lang == "en" %}
+      {% set section = get_section(path="arkiv/_index.en.md") %}
+    {% endif %}
     <ul class="">
       {% for page in section.pages %}
         <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
