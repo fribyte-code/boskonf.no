@@ -1,6 +1,6 @@
 +++
 title = "Program"
-description = "Here it must come a very good description"
+description = "No program available yet."
 template = "layout/program.html"
 [extra]
 +++

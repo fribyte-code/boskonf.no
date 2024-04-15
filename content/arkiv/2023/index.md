@@ -6,7 +6,7 @@ template = "layout/page.html"
 program = "content/arkiv/2023/program.json"
 +++
 
-Vår aller første konferanse ble en stor suksess med over 70 oppmøtte og 5 spennenede talks om alt fra åpen kildekode til åpne data. Det var utrulig kjekt å se så mange tidligere friByte medlemmer og helt nye fjes på konferansen. Vi håper å se dere alle igjen neste år!
+Vår aller første konferanse ble en stor suksess med over 70 oppmøtte og 5 spennenede talks om alt fra åpen kildekode til åpne data. Det var utrolig kjekt å se så mange tidligere friByte medlemmer og helt nye fjes på konferansen. Vi håper å se dere alle igjen neste år!
 
 Her får dere se programmet for konferansen, samt slides og video.
 

@@ -1,6 +1,6 @@
 +++
 title = "Program"
-description = "Her må det komme en skikkelig god beskrivelse"
+description = "Ingen program tilgjengelig ennå."
 template = "layout/program.html"
 [extra]
 +++

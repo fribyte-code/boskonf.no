@@ -1,6 +1,6 @@
 +++
 title = "Frontpage"
-description = "Here it must come a very good description"
+description = "Bergen Open Source is an annual technology conference in Bergen run by students and other volunteers. The conference focuses on open source code and open data."
 template = "layout/index.html"
 [extra]
 is_archive_page = false
@@ -8,7 +8,7 @@ is_archive_page = false
 
 # Bergen Open Source Conference
 
-Bergen Open Source is an (hopefully) annual tech conference in Bergen driven by students and other volunteers. The conference focuses on open source code and open data.
+Bergen Open Source is an annual tech conference in Bergen driven by students and other volunteers. The conference focuses on open source code and open data.
 
 The first Bergen Open Source conference was arrange 2. November 2023, with great sucess! You can read more about [the 2023 conference her](@/arkiv/2023/index.md). We hope to invite you to a new conference in 2024!
 

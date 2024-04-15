@@ -1,6 +1,6 @@
 +++
 title = "Become a sponsor"
-description = "HHere it must come a very good description"
+description = "Information for those interested in sponsoring the conference."
 template = "layout/page.html"
 +++
 

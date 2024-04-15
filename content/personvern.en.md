@@ -1,6 +1,6 @@
 +++
 title = "Privacy statement"
-description = "Here it must come a very good description"
+description = "This page outlines how the conference collects, uses, stores, and protects the personal information of their participants."
 template = "layout/page.html"
 +++
 

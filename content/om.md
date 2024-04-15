@@ -1,6 +1,6 @@
 +++
 title = "Om"
-description = "Her må det komme en skikkelig god beskrivelse"
+description = "Praktisk info om arrangementet. Her finner du blant annet når og hvor konferansen skal skje, samt. annet praktisk info."
 template = "layout/page.html"
 +++
 
