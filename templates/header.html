@@ -5,13 +5,17 @@
   <nav>
     <ul>
       {% for the_page in config.extra.nav %}
-        {% set path = the_page.path | replace(from="@/", to="") %}
+
         {% set_global path = the_page.path %}
+        
         {% if lang == "en" %}
           {% set pre_path = path | split(pat=".") | first %}
           {% set_global path = pre_path ~ "." ~ lang ~ ".md" %}
+          <p>{{path}}</p>
         {% endif %}
-        {% set_global path = path | replace(from="@/", to="") %}
+
+        {% set path = the_page.path | replace(from="@/", to="") %}
+
         {% if the_page.type == "page" %}
           {% set page = get_page(path=path) %}
         {% else %}
