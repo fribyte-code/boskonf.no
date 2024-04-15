@@ -5,23 +5,33 @@
   <nav>
     <ul>
       {% for the_page in config.extra.nav %}
-        {% set path = the_page.path | replace(from="@/", to="") %}
-        {% set_global page = "" %}
+
+        {% set_global path = the_page.path %}
+        
+
+        {% if lang == "en" %}
+          {% set pre_path = path | split(pat=".") | first %}
+          {% set_global path = pre_path ~ "." ~ lang ~ ".md" %}
+        {% endif %}
+
+        {% set path = path | replace(from="@/", to="") %}
+
         {% if the_page.type == "page" %}
           {% set page = get_page(path=path) %}
         {% else %}
           {% set page = get_section(path=path) %}
         {% endif %}
 
-        <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+        <li><a href="{{ page.permalink }}">{{ page.title | safe }}</a></li>
       {% endfor %}
       {% if config.extra.is_active %}
         <li>
           <a class="btn primary" href="{{ config.extra.event_registration_link}}" target="_blank">
-            Meld deg på!
+            {{ trans(key="pamelding", lang=lang) }}
           </a>
         </li>
       {% endif %}
+      {{ macros::translation() }}
     </ul>
   </nav>
 </header>

@@ -1,6 +1,6 @@
 +++
 title = "Personvernserklæring"
-description = "Her må det komme en skikkelig god beskrivelse"
+description = "Denne siden gir en oversikt over hvordan konferansen samler inn, bruker, lagrer og beskytter personlig informasjon om deltakerne sine."
 template = "layout/page.html"
 +++
 
@@ -10,8 +10,8 @@ friByte er behandlingsansvarlig for behandlingen av personopplysninger som beskr
 
 Vi behandler følgende kategorier av personopplysninger:
 
-*   **Grunnleggende informasjon**: Navn, arbeidsstatus, matpreferanser
-*   **Kontaktinformasjon**: Epostadresse
+- **Grunnleggende informasjon**: Navn, arbeidsstatus, matpreferanser
+- **Kontaktinformasjon**: Epostadresse
 
 Personopplysningene samles inn direkte fra deg gjennom informasjon du oppgir til oss.
 
@@ -23,7 +23,7 @@ Vi bruker dine personopplysninger til å oppfylle våre avtaler med deg, det vil
 
 ## Dine rettigheter
 
-Dersom du ønsker å utøve noen av dine rettigheter, ta kontakt med oss på post@fribyte.no.
+Dersom du ønsker å utøve noen av dine rettigheter, ta kontakt med oss på [post@fribyte.no].
 
 ### Rett til innsyn i egne opplysninger
 
@@ -53,6 +53,8 @@ Du har rett til å få utlevert dine personopplysninger i et strukturert, alminn
 
 Vi håper du vil si ifra dersom du mener vi ikke overholder reglene i personopplysningsloven. Si da gjerne først i fra gjennom den kontakten eller kanalen du allerede har etablert med oss. Du kan også klage over vår behandling av personopplysninger. Dette gjør du til Datatilsynet.
 
-**Denne personvernerklæringen er basert på en mal for [personvernerklæring](https://gdprcontrol.no/personvernerklaring-mal/) fra [gdprcontrol.no](https://gdprcontrol.no/)**
+**Denne personvernerklæringen er basert på en mal for [personvernerklæring] fra [gdprcontrol.no]**
 
-
+[post@fribyte.no]: mailto:post@fribyte.no
+[personvernerklæring]: https://gdprcontrol.no/personvernerklaring-mal/
+[gdprcontrol.no]: https://gdprcontrol.no/

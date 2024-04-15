@@ -1,6 +1,6 @@
 +++
 title = "Bli sponsor"
-description = "Her må det komme en skikkelig god beskrivelse"
+description = "Informasjon for de som er interessert i å sponse konferansen."
 template = "layout/page.html"
 +++
 
