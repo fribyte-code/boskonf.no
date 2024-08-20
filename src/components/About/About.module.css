@@ -1,0 +1,53 @@
+.cont {
+    background-color: #4439BB;
+    color: #F1F1F1;
+    padding: 8rem 2rem;
+}
+.imgTxtCont {
+    display: flex;
+    gap: 2rem
+}
+.imgCont {
+    width: 50%;
+    margin: auto;
+
+    img {
+        width: 100%;
+        border-radius: 10rem;
+    }
+}
+.txtCont {
+    width: 50%;
+
+    p {
+        font-size: 1.75rem;
+        font-weight: 300;
+    }
+    a {
+        width: max-content;
+        display: flex;
+        gap: 1rem;
+        margin: 6rem 0 0 0;
+        font-size: 1.25rem;
+        font-weight: 200;
+        transform: translateX(0%);
+    }
+    a:hover {
+        transform: translateX(20%);
+        transition-duration: 0.25s
+    }
+}
+.txtCont .heroTxt {
+    color: #12E8BE;
+    font-weight: 500;
+}
+
+.brandingCont {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin: 6rem 0 0 0;
+    font-size: 6rem;
+    opacity: 0.4;
+    overflow: hidden;
+}
