@@ -1,7 +1,7 @@
 .cont {
     background-color: #6A67E8;
     color: #F1F1F1;
-    padding: 0rem 2rem;
+    padding: 1rem 2rem;
 }
 .cont nav {
     display: flex;
@@ -14,6 +14,7 @@
         color: #F1F1F1;
         font-size: 2.5rem;
         font-weight: 400;
+        line-height: 0;
     }
     ul {
         width: 60%;
