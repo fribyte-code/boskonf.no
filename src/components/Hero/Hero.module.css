@@ -56,9 +56,14 @@ button {
     margin: 4rem 0 0 0;
     color: rgba(40, 40, 40, 0.9);
     font-size: 1.25rem;
-    font-weight: bold;
+    font-weight: 600;
+    transition-duration: 0.25s;
+    cursor: pointer;
 
     img {
         opacity: 0.75;
     }
+}
+button:hover {
+    padding: 1.5rem 6rem;
 }
