@@ -1,0 +1,71 @@
+.cont {
+    background-color: #1C1D23;
+    color: #F1F1F1;
+    padding: 6rem 2rem;
+}
+.titleCont {
+    display: flex;
+    align-items: center;
+}
+.titleCont .details {
+    width: 70%;
+
+    h2 {
+        font-size: 5rem;
+        line-height: 2rem;
+    }
+    p {
+        margin: 0 0 2rem 0;
+    }
+}
+.titleCont .cta {
+    width: 30%;
+    margin: 0 0 0 auto;
+
+    a {
+        width: max-content;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        border-radius: 4rem;
+        padding: 1rem 2rem;
+        margin: 0 0 0 auto;
+    }
+    a:hover {
+        transition-duration: 0.25s;
+        border: 2px solid rgba(255, 255, 255, 0.75);
+    }
+}
+
+/* speakers */
+.speakersCont {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem 0;
+}
+.speakersCont .cardCont {
+    position: relative;
+    transition-duration: 0.25s;
+}
+.speakersCont .cardCont:hover {
+    transform: rotate(5deg);
+}
+.speakersCont .cardCont .pfp {
+
+}
+.speakersCont .cardCont .name {
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.speakersCont .cardCont .title {
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    font-size: 0.75rem;
+    font-weight: 500;
+}

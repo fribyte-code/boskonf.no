@@ -8,7 +8,7 @@ export default function Counter() {
                 <span className={Styles.counterTxt}>WORLD-CLASS SPEAKERS</span>
             </div>
             <div className={Styles.detailsCont}>
-                <span className={Styles.counterNo}>20 hr</span>
+                <span className={Styles.counterNo}>20hr</span>
                 <span className={Styles.counterTxt}>WORKSHOP</span>
             </div>
             <div className={Styles.detailsCont}>
