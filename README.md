@@ -2,11 +2,11 @@
 
 ## 🛠️ Setup
 
-1. `zola serve -O`
+1. `npm install`
+2. `npm run dev`
 
 ## ℹ️ Handy to know
 
-- There are few page templates at the moment. Maybe we don't need so many.
 - Everything in the program comes from a JSON file located in `static/`.
 
 ### 📅 Program format
@@ -20,9 +20,10 @@
   "type": "info"
 }
 ```
+
 - Time (`from` and `to`) should definitely include the entire date and time, it makes it easier to iterate on later.
 - `type` has these types:
-    - `info`
-    - `talk`
-    - `lightning`
-    - `tbd` (More to come for sure.)
+  - `info`
+  - `talk`
+  - `lightning`
+  - `tbd` (More to come for sure.)
