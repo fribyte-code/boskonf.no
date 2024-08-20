@@ -1,0 +1,48 @@
+.cont {
+    background-color: #FEFEFF;
+    color: #0D0C0C;
+    padding: 6rem 2rem;
+}
+
+.titleCont {
+    h2 {
+        font-size: 5rem;
+        line-height: 2rem;
+    }
+    p {
+        width: 80%;
+        margin: 0 0 2rem 0;
+    }
+}
+
+.legend {
+    display: flex;
+    gap: 4rem;
+}
+.legend .workshop,
+.legend .conference,
+.legend .break {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    div {
+        height: 1rem;
+        width: 1rem;
+        border-radius: 50%;
+    }
+}
+.legend .workshop div {
+    background-color: #12E8BE;
+}
+.legend .conference div {
+    background-color: #504CCB;
+}
+.legend .break div {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/* schedule cont */
+.scheduleCont {
+    margin: 5rem 0;
+}

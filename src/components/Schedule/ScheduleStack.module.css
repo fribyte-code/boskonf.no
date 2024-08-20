@@ -1,0 +1,74 @@
+.cont {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.legend {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin: 0.45rem;
+}
+.clear {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.workshop {
+    background-color: #12E8BE;
+}
+.conference {
+    background-color: #504CCB;
+}
+.time {
+    width: 15%;
+    font-size: 1.25rem;
+}
+.detailsCont {
+    width: 70%;
+}
+.detailsCont .title {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+.detailsCont .subtitle {
+    opacity: 0.75;
+    font-size: 1rem;
+}
+.detailsCont .speakersCont {
+    display: flex;
+    gap: 2rem;
+}
+.detailsCont .speakersCont .speakerCont {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+
+    .imgCont {
+        height: 3rem;
+        width: 3rem;
+        overflow: hidden;
+        border-radius: 50%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%;
+        }
+    }
+}
+.detailsCont .speakersCont .speakerDetailsCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+
+    .speakerTitle {
+        font-size: 0.75rem;
+        opacity: 0.75;
+    }
+}
+
+.duration {
+    opacity: 0.75;
+}
