@@ -7,8 +7,8 @@ template = "layout/page.html"
 ## Practical information
 
 - The event is free for everyone!
-- **Date:** *TBA...*
-- **Location:** *TBA...*
+- **Date:** 7. November
+- **Location:** Storelogen @ Kvarteret, [Olav Kyrres gate 49, Bergen][Olav Kyrres gate 49, Bergen]
 - **Food:** There will be served food, please provide any allergy/other considerations when signing up for the event!
 - **Drinks:** We also have people at the bar during the conference, drinks with and without alcohol will be served here.
 - [**Privacy statement**](@/personvern.en.md)
