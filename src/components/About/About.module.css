@@ -5,10 +5,11 @@
 }
 .imgTxtCont {
     display: flex;
+    flex-direction: column;
     gap: 2rem
 }
 .imgCont {
-    width: 50%;
+    width: 100%;
     margin: auto;
 
     img {
@@ -17,7 +18,7 @@
     }
 }
 .txtCont {
-    width: 50%;
+    width: 100%;
 
     p {
         font-size: 1.75rem;
@@ -50,4 +51,16 @@
     font-size: 6rem;
     opacity: 0.4;
     overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .imgTxtCont {
+        flex-direction: row;
+    }
+    .imgCont {
+        width: 50%;
+    }
+    .txtCont {
+        width: 50%;
+    }    
 }

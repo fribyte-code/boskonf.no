@@ -15,8 +15,10 @@ export default function ScheduleStack({
 
     return (
         <div className={Styles.cont}>
-            <div className={`${Styles.legend} ${legendCSS}`}></div>
-            <span className={Styles.time}>{time}</span>
+            <div className={Styles.legendTimeCont}>
+                <div className={`${Styles.legend} ${legendCSS}`}></div>
+                <span className={Styles.time}>{time}</span>
+            </div>
             <div className={Styles.detailsCont}>
                 <span className={Styles.title}>{title}</span>
                 {subtitle && <p className={Styles.subtitle}>{subtitle}</p>}
