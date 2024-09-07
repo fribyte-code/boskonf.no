@@ -5,19 +5,34 @@
 1. `npm install`
 2. `npm run dev`
 
-## ℹ️ Handy to know
+## Internationalization
 
-- Everything in the program comes from a JSON file located in `static/`.
+Translation strings can be found in (translations.ts)[src/i18n/translations.ts].
+
+Usage:
+```ts
+---
+import { useTranslation } from "../../i18n/utils";
+const t = useTranslation(Astro.url);
+---
+<p>{t("some.string")}</p>
+```
 
 ### 📅 Program format
+- Everything in the program comes from JSON files located in `src/program`.
 
 ```json
 {
   "title": "Event Name",
   "description": "Description",
+  "speaker": "Name",
   "from": "2023-09-20T19:24:00",
   "to": "2023-09-20T20:24:00",
-  "type": "info"
+  "type": "info",
+  "attachments": [
+      { "name": "File name", "url": "url to file" }
+  ],
+  "videoUrl": "url to video"
 }
 ```
 

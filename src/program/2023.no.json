@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Dørene åpner",
+    "description": "Prøv å være tidlig ute!",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T16:30:00",
+    "to": "2023-11-02T17:00:00",
+    "type": "info"
+  },
+  {
+    "title": "Kort introduksjon",
+    "description": "Av friBytes egne Christian K. Engelsen.",
+    "speaker": "Christian K. Engelsen",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T17:00:00",
+    "to": "2023-11-02T17:10:00",
+    "type": "info"
+  },
+  {
+    "title": "Intro til makt for fri programvare-idealistar",
+    "description": "Nils Norman Haukås er en solo-gründer av BuilderHeart. Nils vil ta dere med på en reise i verden rundt fri programvare med fokus på sosial og kapitalistisk makt.",
+    "speaker": "Nils Norman Haukås",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T17:10:00",
+    "to": "2023-11-02T17:30:00",
+    "type": "talk",
+    "attachments": [
+      {
+        "name": "Presentasjon",
+        "url": "/arkiv/2023/makt-programvare-idealistar.pdf"
+      }
+    ],
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Nils_Norman_Haukaas_boskonf_2023.mp4"
+  },
+  {
+    "title": "OpenStreetMap hvem hva hvor",
+    "description": "Mathias Haugsbø er en dreven OSM bidragsyter, og friBytes nåværende leder. Her gir Mathias et lynkurs i hva OSM er, hvorfor det er viktig med en åpen kartdatabase og hvor du kan bidra.",
+    "speaker": "Mathias Haugsbø",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T17:35:00",
+    "to": "2023-11-02T17:55:00",
+    "type": "talk",
+    "attachments": [{ "name": "Presentasjon", "url": "/arkiv/2023/osm.pdf" }],
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Mathias_Haugsbo_boskonf_2023.mp4"
+  },
+  {
+    "title": "Profesjonell bruk av fri programvare",
+    "description": "Peter N. M. Hansteen er Senior Technical Specialist i Tietoevry Create Cloud, og er en mangeårig fri programvare-entusiast. Her vil Peter vise hvordan fri programvare brukes i bedrifter i stor skala, og trekke opp noen linjer fra historien frem til nåtid.",
+    "speaker": "Peter N. M. Hansteen",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T18:00:00",
+    "to": "2023-11-02T18:20:00",
+    "type": "talk",
+    "attachments": [
+      {
+        "name": "Presentasjon",
+        "url": "/arkiv/2023/opensource_in_enterprise_environments.pdf"
+      }
+    ],
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Petter_N_M_Hansteen_boskonf_2023.mp4"
+  },
+  {
+    "title": "Matpause",
+    "description": "Tid for mat og drikke!",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T18:25:00",
+    "to": "2023-11-02T19:15:00",
+    "type": "info"
+  },
+  {
+    "title": "Kom igang med åpen kildekode",
+    "description": "Hans Kristian Flaatten er plattform utvikler hos NAV, har brukt åpen kildekode hele sitt liv og vært en del av Node.js stiftelsen. I dette foredraget vil Hans Kristian snakke om sine erfaringer fra store og små åpen kildekode prosjekter om hvordan man kan komme i gang med bidrag eller til og med lage sine egne prosjekter.",
+    "speaker": "Hans Kristian Flaatten",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T19:20:00",
+    "to": "2023-11-02T19:40:00",
+    "type": "talk",
+    "attachments": [
+      { "name": "Presentasjon", "url": "/arkiv/2023/kom-i-gang.pdf" }
+    ],
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Hans_Kristian_Flaatten_boskonf_2023.mp4"
+  },
+  {
+    "title": "Eksperimentering for Grønnere Kode",
+    "description": "Kent Inge F. Simonsen er konsulent i Tietoevry og en av friBytes guruer. Kent Inge vil se på hvordan enkle eksperimenter kan hjelpe oss å bedre valg gitt målet om grønnere og mer effektiv kode.",
+    "speaker": "Kent Inge F. Simonsen",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T19:45:00",
+    "to": "2023-11-02T20:05:00",
+    "type": "talk",
+    "videoUrl": "https://files.fribyte.no/boskonf/2023/Kent_Inge_F_Simonsen_boskonf_2023.mp4"
+  },
+  {
+    "title": "Fest!🥳",
+    "description": "Takk og farvel! For de som vil være med utover kvelden blir vi igjen på Kvarteret!",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T20:05:00",
+    "to": "2023-11-02T00:00:00",
+    "type": "info"
+  }
+]

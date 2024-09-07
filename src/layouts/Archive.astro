@@ -1,0 +1,30 @@
+---
+import type { BosKonfYear } from "../components/Main/Schedule/Schedule.astro";
+import Schedule from "../components/Main/Schedule/Schedule.astro";
+import { getLangFromUrl } from "../i18n/utils";
+import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+const year = frontmatter.year as BosKonfYear;
+---
+
+<Layout title="title">
+  <div class="container">
+    <div class="content">
+      <slot />
+      <Schedule year={year} language={lang} />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    background-color: #fff;
+  }
+  .content {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 2em 0;
+  }
+</style>

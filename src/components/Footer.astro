@@ -1,0 +1,99 @@
+<footer class="cont">
+  <nav>
+    <div class="translateBtn">
+      <img class="earthIcon" src="footer/earth.svg" alt="earth icon" />
+      <span>Norsk</span>
+      <img src="/footer/arrow-down.svg" alt="arrow down" />
+    </div>
+    <ul>
+      <li>SPONSOR</li>
+      <li>FAQ</li>
+      <li>TERMS AND WHATNOT</li>
+    </ul>
+    <div class="backToTop">
+      <img src="/footer/arrow-down.svg" alt="arrow up" />
+    </div>
+  </nav>
+  <span class="copyright">© 2024 BosKonf. All Rights Reserved</span>
+</footer>
+<style>
+  .cont {
+    background-color: #fefeff;
+    color: #010100;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .cont nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* align-items: center; */
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  }
+  .translateBtn {
+    height: 1.5rem;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .earthIcon {
+      height: 80%;
+      margin: 0 0.25rem 0 0;
+    }
+  }
+  .backToTop {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: rotate(180deg);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .backToTop > img {
+    transition-duration: 0.25s;
+  }
+  .backToTop:hover > img {
+    transform: translateY(50%);
+  }
+  .copyright {
+    display: block;
+    opacity: 0.75;
+    margin: 1rem 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cont nav {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0;
+
+      ul {
+        width: 80%;
+        flex-direction: row;
+        gap: 3rem;
+      }
+    }
+    .backToTop {
+      margin: 0;
+    }
+  }
+</style>

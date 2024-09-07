@@ -1,0 +1,89 @@
+---
+import { useTranslation } from "../../i18n/utils";
+import FancyExternalLink from "../FancyExternalLink.astro";
+const t = useTranslation(Astro.url);
+---
+
+<div class="container">
+  <div class="content">
+    <div class="imgTxtCont">
+      <div class="imgCont">
+        <img src="/mathias_present.jpg" alt="One of last years speakers" />
+      </div>
+      <div class="txtCont">
+        <p>
+          <span class="heroTxt">BosKonf</span>
+          {t("about.about")}
+        </p>
+        <FancyExternalLink
+          url="https://fribyte.no/om/"
+          text={t("about.learnmore")}
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    background-color: #4439bb;
+  }
+  .content {
+    max-width: var(--content-width);
+    color: #f1f1f1;
+    padding: 8rem 2rem;
+    margin: 0 auto;
+  }
+  .imgTxtCont {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .imgCont {
+    width: 100%;
+    margin: auto;
+
+    img {
+      width: 100%;
+      border-radius: 3rem;
+    }
+  }
+  .txtCont {
+    width: 100%;
+
+    p {
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+    a {
+      width: max-content;
+      margin: 6rem 0 0 0;
+    }
+  }
+  .txtCont .heroTxt {
+    color: #12e8be;
+    font-weight: 500;
+  }
+
+  .brandingCont {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    margin: 6rem 0 0 0;
+    font-size: 6rem;
+    opacity: 0.4;
+    overflow: hidden;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .imgTxtCont {
+      flex-direction: row;
+    }
+    .imgCont {
+      width: 50%;
+    }
+    .txtCont {
+      width: 50%;
+    }
+  }
+</style>

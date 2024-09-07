@@ -1,28 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Counter from "../components/Counter/Counter";
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import About from "../components/About/About";
-import Speakers from "../components/Speakers/Speakers";
-import Schedule from "../components/Schedule/Schedule";
-import Sponsors from "../components/Sponsors/Sponsors";
-import FAQ from "../components/FAQ/FAQ";
-import Contact from "../components/Contact/Contact";
-import Footer from "../components/Footer/Footer";
+import Main from "../components/Main/Main.astro";
 ---
 
-<Layout title="Bergen Open Source-konferanse">
-  <!-- env insertion point is where Environment variables for the docker image will be inserted -->
-  <noscript id="env-insertion-point"></noscript>
-  <Header />
-  <Hero />
-  <Counter />
-  <About />
-  <Speakers />
-  <Schedule />
-  <Sponsors />
-  <FAQ />
-  <Contact />
-  <Footer />
-</Layout>
+<Main />

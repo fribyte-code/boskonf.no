@@ -1,0 +1,112 @@
+---
+import { useTranslation } from "../../i18n/utils";
+const t = useTranslation(Astro.url);
+---
+
+<div class="container">
+  <div class="content">
+    <div class="dateCont">
+      <div class="date">
+        <img src="/calendar.svg" alt="calendar icon" />
+        <span>1. JANUAR</span>
+      </div>
+      <div class="location">
+        <img src="/location.svg" alt="location icon" />
+        <span>Kvarteret, Bergen</span>
+      </div>
+    </div>
+    <h2>{t("main.title")}</h2>
+    <h3>{t("main.subTitle")}</h3>
+    <p>
+      {t("main.description")}
+    </p>
+    <button>
+      {t("main.signUp")}
+      <img src="/arrow-up-right.svg" alt="arrow up right icon" />
+    </button>
+  </div>
+</div>
+
+<style>
+  .container {
+    background-color: #6a67e8;
+  }
+  .content {
+    color: #f1f1f1;
+    padding: 5rem 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  .dateCont {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .dateCont .date,
+  .dateCont .location {
+    position: relative;
+
+    img {
+      height: 1rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    span {
+      margin: 0 0 0 1.5rem;
+    }
+  }
+  .dateCont .date {
+    background-color: #504ccb;
+    padding: 0.25rem 1rem;
+    border-radius: 20rem;
+  }
+  .dateCont .location {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 0.25rem 1rem;
+    border-radius: 20rem;
+  }
+
+  /* hero text */
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
+  }
+  p {
+    width: 90%;
+    font-size: 1.125rem;
+  }
+  button {
+    background-color: #12e8be;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 20rem;
+    margin: 4rem 0 0 0;
+    color: rgba(40, 40, 40, 0.9);
+    font-size: 1.25rem;
+    font-weight: 600;
+    transition-duration: 0.25s;
+    cursor: pointer;
+
+    img {
+      opacity: 0.75;
+    }
+  }
+  button:hover {
+    padding: 1.5rem 6rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    h2 {
+      font-size: 6rem;
+      font-weight: 600;
+      margin-bottom: 0.5em;
+    }
+  }
+</style>

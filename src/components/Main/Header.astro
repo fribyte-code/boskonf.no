@@ -1,0 +1,104 @@
+---
+import { getLangFromUrl, useTranslation } from "../../i18n/utils";
+import FancyExternalLink from "../FancyExternalLink.astro";
+import LanguageSwitch from "../LanguageSwitch.astro";
+
+import { getRelativeLocaleUrl } from "astro:i18n";
+function url(path: string) {
+  return getRelativeLocaleUrl(getLangFromUrl(Astro.url), path);
+}
+const t = useTranslation(Astro.url);
+---
+
+<div class="container">
+  <header class="head">
+    <nav>
+      <h1><a href={url("/")}>{t("main.title")}</a></h1>
+
+      <div class="items">
+        <ul>
+          <li class="active">
+            <a href={url("/")}>{t("header.home")}</a>
+          </li>
+          <li class="active">
+            <a href={url("/archive/2023")}>{t("header.archive")}</a>
+          </li>
+        </ul>
+        <div class="lang-switch">
+          <!-- <FancyExternalLink url="https://fribyte.no" text="friByte" /> -->
+          <LanguageSwitch />
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+<style>
+  .container {
+    background-color: #6a67e8;
+  }
+  .head {
+    color: #f1f1f1;
+    padding: 1rem 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+  .head nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    h1 {
+      width: 50%;
+      color: #f1f1f1;
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 0;
+    }
+    .items {
+      display: flex;
+      flex: 1 0;
+    }
+    ul {
+      gap: 3rem;
+      font-size: 1.125rem;
+      /* margin: 0 0 0 3rem; */
+
+      li {
+        position: relative;
+        cursor: pointer;
+      }
+      li::after {
+        width: 0%;
+        height: 5px;
+        content: "";
+        display: block;
+        background-color: #f1f1f1;
+        position: absolute;
+        bottom: -1;
+        left: 12%;
+        transition-duration: 0.25s;
+      }
+      li:hover::after {
+        width: 75%;
+      }
+    }
+    .lang-switch {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .head nav {
+      h1 {
+        width: 20%;
+      }
+      ul {
+        display: flex;
+      }
+    }
+  }
+</style>

@@ -12,7 +12,7 @@ export default function Speakers() {
                 </div>
                 <div className={Styles.cta}>
                     <a href="/">SE ALLE SPEAKERE
-                        <img src="arrow-up-right-white.svg" alt="arrow up right" />
+                        <img src="/arrow-up-right-white.svg" alt="arrow up right" />
                     </a>
                 </div>
             </div>

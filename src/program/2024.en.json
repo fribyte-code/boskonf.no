@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Dørene åpner",
+    "description": "Prøv å være tidlig ute!",
+    "image": "TODO: path to some image in static dir",
+    "from": "2023-11-02T16:30:00",
+    "to": "2023-11-02T17:00:00",
+    "type": "info"
+  }
+]
