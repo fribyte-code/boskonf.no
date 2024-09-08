@@ -27,35 +27,20 @@ const {
 
 const t = useTranslation(Astro.url);
 
-const legendCSS = legend === "talk" ? "talk" : "info";
-
 function formatTime(time: string) {
-  const date = new Date(time);
-  return format(date, "HH:mm");
+  return format(time, "HH:mm");
 }
 function formatDuration(from: string, to: string) {
-  const fromDate = new Date(from);
-  const toDate = new Date(to);
   return differenceInMinutes(to, from) + " " + t("schedule.minutes");
 }
 ---
 
 <div class="cont">
   <div class="legendTimeCont">
-    <div
-      class={legend + " " + legendCSS}
-      class:list={[
-        "legend",
-        {
-          workshop: legend == "workshop",
-          conference: legend == "conference",
-          clear: "",
-        },
-      ]}
-    >
-    </div>
+    <div class:list={["legend", legend]}></div>
     <span class="time">{formatTime(from)}</span>
   </div>
+
   <div class="detailsCont">
     <span class="title">{title}</span>
     {subtitle && <p class="subtitle">{subtitle}</p>}
@@ -65,7 +50,6 @@ function formatDuration(from: string, to: string) {
           <div class="speakerCont">
             <div class="speakerDetailsCont">
               <span class="speakerName">{speaker}</span>
-              {/* <span class="speakerTitle">{speaker.title}</span> */}
             </div>
           </div>
         </div>
@@ -102,7 +86,6 @@ function formatDuration(from: string, to: string) {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* margin: 4rem 0; */
   }
   .legendTimeCont {
     width: 100%;
@@ -123,13 +106,14 @@ function formatDuration(from: string, to: string) {
   .talk {
     background-color: #504ccb;
   }
+
   .time {
-    /* width: 15%; */
     font-size: 1.25rem;
   }
   .detailsCont {
     width: 100%;
   }
+
   .detailsCont .title {
     font-size: 1.75rem;
     font-weight: 500;
@@ -139,13 +123,13 @@ function formatDuration(from: string, to: string) {
     opacity: 0.75;
     font-size: 1rem;
   }
+
   .detailsCont .speakersCont {
     display: flex;
     flex-direction: column;
   }
   .detailsCont .speakersCont .speakerCont {
     display: flex;
-    /* margin: 0.5rem 0; */
   }
   .detailsCont .speakersCont .speakerDetailsCont {
     display: flex;
@@ -160,6 +144,7 @@ function formatDuration(from: string, to: string) {
 
   .duration {
     opacity: 0.75;
+    text-wrap: nowrap;
   }
 
   .attachments {
