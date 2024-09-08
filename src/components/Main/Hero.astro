@@ -26,11 +26,13 @@ const program = await getProgram(year, language);
         <span>{program.location}</span>
       </div>
     </div>
+
     <h2>{t("main.title")}</h2>
     <h3>{t("main.subTitle")}</h3>
     <p>
       {t("main.description")}
     </p>
+
     <button>
       {t("main.signUp")}
       <img src="/arrow-up-right.svg" alt="arrow up right icon" />
@@ -53,10 +55,12 @@ const program = await getProgram(year, language);
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
   }
   .dateCont .date,
   .dateCont .location {
     position: relative;
+    text-wrap: nowrap;
 
     img {
       height: 1rem;
