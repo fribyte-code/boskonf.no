@@ -11,6 +11,14 @@ interface Props {
 
 const { year, language } = Astro.props;
 
+function formatDate(date: string) {
+  return Intl.DateTimeFormat(language, {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(date));
+}
+
 const program = await getProgram(year, language);
 ---
 
@@ -19,7 +27,7 @@ const program = await getProgram(year, language);
     <div class="dateCont">
       <div class="date">
         <img src="/calendar.svg" alt="calendar icon" />
-        <span>{program.date}</span>
+        <span>{formatDate(program.date)}</span>
       </div>
       <div class="location">
         <img src="/location.svg" alt="location icon" />
@@ -108,13 +116,15 @@ const program = await getProgram(year, language);
     font-weight: 600;
     transition-duration: 0.25s;
     cursor: pointer;
+    border: 2px solid rgba(0, 0, 0, 0.1);
 
     img {
       opacity: 0.75;
     }
   }
   button:hover {
-    padding: 1.5rem 6rem;
+    background-color: #3ff1ce;
+    border-color: rgba(255, 255, 255, 0.2);
   }
 
   @media only screen and (min-width: 768px) {

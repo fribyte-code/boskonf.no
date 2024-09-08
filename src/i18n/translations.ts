@@ -23,6 +23,9 @@ export const no = {
   "sponsors.apply": "Kontakt oss for å bli sponsor",
   "speakers.title": "Våre talere",
   "faq.title": "Spørsmål?",
+  "archive.title": "BosKonf arkiv",
+  "footer.sourceLink": "Kildekode",
+  "footer.text": "BosKonf, laget av friByte.",
 };
 export const en: typeof no = {
   "header.home": "Home",
@@ -44,4 +47,7 @@ export const en: typeof no = {
   "sponsors.apply": "Contact us to become a sponsor",
   "speakers.title": "Our speakers",
   "faq.title": "Questions?",
+  "archive.title": "BosKonf Archive",
+  "footer.sourceLink": "Source code",
+  "footer.text": "BosKonf, created by friByte.",
 };

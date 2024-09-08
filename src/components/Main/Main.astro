@@ -4,8 +4,8 @@ import Hero from "../Main/Hero.astro";
 import About from "../Main/About.astro";
 import Speakers from "./Speakers/Speakers";
 import Schedule, { getProgram } from "./Schedule/Schedule.astro";
-import Sponsors from "./Sponsors/Sponsors";
-import FAQ from "./FAQ/FAQ";
+import Sponsors from "./Sponsors.astro";
+import FAQ from "./FAQ.astro";
 import Contact from "../Contact.astro";
 import { getLangFromUrl } from "../../i18n/utils";
 import { type Speaker } from "../../program/program";
@@ -38,7 +38,7 @@ for (const talk of program.schedule) {
     <About />
     <Speakers speakers={speakers} language={language} />
     <Schedule year={year} language={language} withTitle />
-    <Sponsors sponsors={program.sponsors} language={language} />
+    <Sponsors sponsors={program.sponsors} />
     <FAQ language={language} />
     <Contact />
   </div>

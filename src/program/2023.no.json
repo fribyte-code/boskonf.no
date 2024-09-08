@@ -117,7 +117,6 @@
       "description": "Takk og farvel! For de som vil være med utover kvelden blir vi igjen på Kvarteret!",
       "image": "TODO: path to some image in static dir",
       "from": "2023-11-02T20:05:00",
-      "to": "2023-11-02T00:00:00",
       "type": "info"
     }
   ],

@@ -1,5 +1,5 @@
-import { useTranslation, type langs } from "../../../i18n/utils";
-import Styles from "./FAQ.module.css";
+---
+import { getLangFromUrl, useTranslation } from "../../i18n/utils";
 
 const questionsNO: Question[] = [
   {
@@ -61,21 +61,74 @@ type Question = {
   question: string;
   answer: string;
 };
+const language = getLangFromUrl(Astro.url);
+const t = useTranslation(Astro.url);
+---
 
-export default function FAQ({ language }: { language: keyof typeof langs }) {
-  const t = useTranslation(undefined, language);
-  return (
-    <div className={Styles.cont}>
-      <h2>{t("faq.title")}</h2>
-      <span></span>
-      <div className={Styles.questionsCont}>
-        {(language == "no" ? questionsNO : questionsEN).map((q) => (
-          <div className={Styles.faqCardCont}>
-            <span className={Styles.question}>{q.question}</span>
-            <span className={Styles.answer}>{q.answer}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
+<div class="cont">
+  <h2>{t("faq.title")}</h2>
+  <span></span>
+  <div class="questionsCont">
+    {
+      (language == "no" ? questionsNO : questionsEN).map((q) => (
+        <div class="faqCardCont">
+          <span class="question">{q.question}</span>
+          <span class="answer">{q.answer}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .cont {
+    max-width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fefeff;
+    color: #010100;
+    padding: 6rem 2rem;
+
+    h2 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+  .questionsCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto 4rem auto;
+  }
+  .questionsCont .faqCardCont {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #12e8be;
+    padding: 0 0 0 0.5rem;
+
+    .question {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .answer {
+      margin: 0 0 0 0.5rem;
+      opacity: 0.75;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cont {
+      h2 {
+        font-size: 5rem;
+        line-height: 2rem;
+      }
+    }
+    .questionsCont {
+      /* width: 70%; */
+      margin: 0 auto 4rem auto;
+    }
+  }
+</style>

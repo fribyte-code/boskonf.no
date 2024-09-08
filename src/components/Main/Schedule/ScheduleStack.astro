@@ -78,7 +78,7 @@ function formatDuration(from: string, to: string) {
       )
     }
   </div>
-  <span class="duration">{formatDuration(from, to)}</span>
+  {to && <span class="duration">{formatDuration(from, to)}</span>}
 </div>
 
 <style>
@@ -161,9 +161,6 @@ function formatDuration(from: string, to: string) {
     .legendTimeCont {
       width: 15%;
       display: flex;
-    }
-    .legend {
-      margin: 0.45rem;
     }
     .detailsCont {
       width: 70%;

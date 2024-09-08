@@ -2,8 +2,8 @@
 import Schedule, {
   getProgram,
 } from "../components/Main/Schedule/Schedule.astro";
-import Sponsors from "../components/Main/Sponsors/Sponsors";
-import { getLangFromUrl } from "../i18n/utils";
+import Sponsors from "../components/Main/Sponsors.astro";
+import { getLangFromUrl, useTranslation } from "../i18n/utils";
 import type { BosKonfYear } from "../program/program";
 import Layout from "./Layout.astro";
 
@@ -11,16 +11,17 @@ const { frontmatter } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const year = frontmatter.year as BosKonfYear;
 const program = await getProgram(year, lang);
+const t = useTranslation(Astro.url);
 ---
 
-<Layout title="title">
+<Layout title={`${t("archive.title")} - ${year}`}>
   <main>
     <div class="markdown-text">
       <slot />
     </div>
     <Schedule year={year} language={lang} />
-    <Sponsors sponsors={program.sponsors} language={lang} />
   </main>
+  <Sponsors sponsors={program.sponsors} />
 </Layout>
 
 <style>
@@ -28,9 +29,10 @@ const program = await getProgram(year, lang);
     background-color: #fff;
     max-width: var(--content-width);
     margin: 0 auto;
+    padding: 1em;
   }
   .markdown-text {
     max-width: var(--content-width);
-    padding: 1em;
+    margin-bottom: 3rem;
   }
 </style>
