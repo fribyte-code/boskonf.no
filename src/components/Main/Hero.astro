@@ -1,6 +1,17 @@
 ---
-import { useTranslation } from "../../i18n/utils";
+import { langs, useTranslation } from "../../i18n/utils";
+import type { BosKonfYear } from "../../program/program";
+import { getProgram } from "./Schedule/Schedule.astro";
 const t = useTranslation(Astro.url);
+
+interface Props {
+  year: BosKonfYear;
+  language: keyof typeof langs;
+}
+
+const { year, language } = Astro.props;
+
+const program = await getProgram(year, language);
 ---
 
 <div class="container">
@@ -8,11 +19,11 @@ const t = useTranslation(Astro.url);
     <div class="dateCont">
       <div class="date">
         <img src="/calendar.svg" alt="calendar icon" />
-        <span>1. JANUAR</span>
+        <span>{program.date}</span>
       </div>
       <div class="location">
         <img src="/location.svg" alt="location icon" />
-        <span>Kvarteret, Bergen</span>
+        <span>{program.location}</span>
       </div>
     </div>
     <h2>{t("main.title")}</h2>

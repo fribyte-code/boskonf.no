@@ -1,10 +1,32 @@
-[
-  {
-    "title": "Dørene åpner",
-    "description": "Prøv å være tidlig ute!",
-    "image": "TODO: path to some image in static dir",
-    "from": "2023-11-02T16:30:00",
-    "to": "2023-11-02T17:00:00",
-    "type": "info"
-  }
-]
+{
+  "date": "2024-11-07",
+  "location": "Kvarteret, Bergen",
+  "address": "Olav Kyrres gate 49, 5015 Bergen",
+  "schedule": [
+    {
+      "title": "Dørene åpner",
+      "description": "Prøv å være tidlig ute!",
+      "image": "TODO: path to some image in static dir",
+      "from": "2023-11-02T16:30:00",
+      "to": "2023-11-02T17:00:00",
+      "type": "info"
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Kantega",
+      "logo": "/sponsors/kantega.svg",
+      "url": "https://www.kantega.no/"
+    },
+    {
+      "name": "NAV IT",
+      "logo": "/sponsors/nav.svg",
+      "url": "https://www.detsombetyrnoe.no/"
+    },
+    {
+      "name": "friByte",
+      "logo": "/sponsors/friByte.svg",
+      "url": "https://fribyte.no/"
+    }
+  ]
+}

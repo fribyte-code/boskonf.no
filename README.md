@@ -10,6 +10,7 @@
 Translation strings can be found in (translations.ts)[src/i18n/translations.ts].
 
 Usage:
+
 ```ts
 ---
 import { useTranslation } from "../../i18n/utils";
@@ -19,20 +20,33 @@ const t = useTranslation(Astro.url);
 ```
 
 ### 📅 Program format
+
 - Everything in the program comes from JSON files located in `src/program`.
 
 ```json
 {
-  "title": "Event Name",
-  "description": "Description",
-  "speaker": "Name",
-  "from": "2023-09-20T19:24:00",
-  "to": "2023-09-20T20:24:00",
-  "type": "info",
-  "attachments": [
-      { "name": "File name", "url": "url to file" }
+  "date": "2023-09-20",
+  "location": "Kvarteret, Bergen",
+  "address": "Christies gate 14, 5015 Bergen",
+  "schedule": [
+    {
+      "title": "Event Name",
+      "description": "Description",
+      "speaker": "Name",
+      "from": "2023-09-20T19:24:00",
+      "to": "2023-09-20T20:24:00",
+      "type": "info",
+      "attachments": [{ "name": "File name", "url": "url to file" }],
+      "videoUrl": "url to video"
+    }
   ],
-  "videoUrl": "url to video"
+  "sponsors": [
+    {
+      "name": "Sponsor name",
+      "logo": "url to logo",
+      "url": "url to sponsor"
+    }
+  ]
 }
 ```
 

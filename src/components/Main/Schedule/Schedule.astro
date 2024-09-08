@@ -1,8 +1,12 @@
 ---
 import ScheduleStack from "./ScheduleStack.astro";
 import { useTranslation, type langs } from "../../../i18n/utils";
+import { type BosKonfYear, type Program } from "../../../program/program";
 
-export type BosKonfYear = "2023" | "2024";
+export async function getProgram(year: BosKonfYear, language: "en" | "no") {
+  let json = await import(`../../../program/${year}.${language}.json`);
+  return json.default as Program;
+}
 
 interface Props {
   year: BosKonfYear;
@@ -12,11 +16,8 @@ interface Props {
 
 const { year, language, withTitle = false } = Astro.props;
 
-let json = await import(`../../../program/${year}.${language}.json`);
+const program = await getProgram(year, language);
 
-function schedule() {
-  return json.default as any;
-}
 const t = useTranslation(Astro.url);
 ---
 
@@ -40,7 +41,7 @@ const t = useTranslation(Astro.url);
   </div>
   <div class="scheduleCont">
     {
-      schedule().map((item: any) => (
+      program.schedule.map((item: any) => (
         <ScheduleStack
           from={item.from}
           title={item.title}

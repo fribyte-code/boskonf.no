@@ -4,12 +4,16 @@ import Header from "../Main/Header.astro";
 import Hero from "../Main/Hero.astro";
 import About from "../Main/About.astro";
 import Speakers from "./Speakers/Speakers";
-import Schedule from "./Schedule/Schedule.astro";
+import Schedule, { getProgram } from "./Schedule/Schedule.astro";
 import Sponsors from "./Sponsors/Sponsors";
 import FAQ from "./FAQ/FAQ";
 import Contact from "../Contact.astro";
 import Footer from "../Footer.astro";
 import { getLangFromUrl } from "../../i18n/utils";
+
+const year = "2024";
+const language = getLangFromUrl(Astro.url);
+const program = await getProgram(year, language);
 ---
 
 <style>
@@ -24,11 +28,11 @@ import { getLangFromUrl } from "../../i18n/utils";
   <!-- env insertion point is where Environment variables for the docker image will be inserted -->
   <noscript id="env-insertion-point"></noscript>
   <div class="main">
-    <Hero />
+    <Hero year={year} language={language} />
     <About />
     <Speakers />
-    <Schedule year="2024" language={getLangFromUrl(Astro.url)} withTitle />
-    <Sponsors />
+    <Schedule year={year} language={language} withTitle />
+    <Sponsors sponsors={program.sponsors} />
     <FAQ />
     <Contact />
   </div>
