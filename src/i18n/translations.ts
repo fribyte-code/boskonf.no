@@ -18,6 +18,10 @@ export const no = {
   "schedule.practical": "Praktisk",
   "schedule.talk": "Foredrag",
   "schedule.minutes": "minutter",
+  "sponsors.title": "Våre sponsorer",
+  "sponsors.apply": "Kontakt oss for å bli sponsor",
+  "speakers.title": "Våre talere",
+  "faq.title": "Spørsmål?",
 };
 export const en: typeof no = {
   "header.home": "Home",
@@ -34,4 +38,8 @@ export const en: typeof no = {
   "schedule.practical": "Practical",
   "schedule.talk": "Talk",
   "schedule.minutes": "minutes",
+  "sponsors.title": "Our sponsors",
+  "sponsors.apply": "Contact us to become a sponsor",
+  "speakers.title": "Our speakers",
+  "faq.title": "Questions?",
 };

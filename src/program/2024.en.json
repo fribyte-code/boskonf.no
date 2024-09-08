@@ -10,6 +10,31 @@
       "from": "2023-11-02T16:30:00",
       "to": "2023-11-02T17:00:00",
       "type": "info"
+    },
+    {
+      "title": "Some talk",
+      "description": "Some description",
+      "speaker": {
+        "name": "Some Name",
+        "description": "Some description",
+        "imageUrl": "/speakers/speaker1.png"
+      },
+      "image": "TODO: path to some image in static dir",
+      "from": "2023-11-02T17:00:00",
+      "to": "2023-11-02T17:10:00",
+      "type": "talk"
+    },
+    {
+      "title": "Some other talk",
+      "description": "Some description",
+      "speaker": {
+        "name": "Some other woman",
+        "description": "Some description"
+      },
+      "image": "TODO: path to some image in static dir",
+      "from": "2023-11-02T17:00:00",
+      "to": "2023-11-02T17:10:00",
+      "type": "talk"
     }
   ],
   "sponsors": [

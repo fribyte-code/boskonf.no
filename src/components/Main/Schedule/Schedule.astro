@@ -41,14 +41,14 @@ const t = useTranslation(Astro.url);
   </div>
   <div class="scheduleCont">
     {
-      program.schedule.map((item: any) => (
+      program.schedule.map((item) => (
         <ScheduleStack
           from={item.from}
           title={item.title}
           legend={item.type}
           subtitle={item.description}
           to={item.to}
-          speaker={item.speaker}
+          speaker={item.speaker?.name}
           videoUrl={item.videoUrl}
           attachments={item.attachments}
         />

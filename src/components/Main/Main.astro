@@ -1,6 +1,5 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import Header from "../Main/Header.astro";
 import Hero from "../Main/Hero.astro";
 import About from "../Main/About.astro";
 import Speakers from "./Speakers/Speakers";
@@ -8,12 +7,19 @@ import Schedule, { getProgram } from "./Schedule/Schedule.astro";
 import Sponsors from "./Sponsors/Sponsors";
 import FAQ from "./FAQ/FAQ";
 import Contact from "../Contact.astro";
-import Footer from "../Footer.astro";
 import { getLangFromUrl } from "../../i18n/utils";
+import { type Speaker } from "../../program/program";
 
 const year = "2024";
 const language = getLangFromUrl(Astro.url);
 const program = await getProgram(year, language);
+
+const speakers: Speaker[] = [];
+for (const talk of program.schedule) {
+  if (talk.speaker) {
+    speakers.push(talk.speaker);
+  }
+}
 ---
 
 <style>
@@ -30,10 +36,10 @@ const program = await getProgram(year, language);
   <div class="main">
     <Hero year={year} language={language} />
     <About />
-    <Speakers />
+    <Speakers speakers={speakers} language={language} />
     <Schedule year={year} language={language} withTitle />
-    <Sponsors sponsors={program.sponsors} />
-    <FAQ />
+    <Sponsors sponsors={program.sponsors} language={language} />
+    <FAQ language={language} />
     <Contact />
   </div>
 </Layout>

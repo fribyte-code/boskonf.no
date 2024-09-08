@@ -15,7 +15,7 @@ export type Program = {
 export type ProgramEvent = {
   title: string;
   description: string;
-  speaker: string;
+  speaker?: Speaker;
   image: string;
   from: string;
   to: string;
@@ -34,4 +34,10 @@ export type Sponsor = {
   logo: string;
   url: string;
   description?: string;
+};
+
+export type Speaker = {
+  name: string;
+  description: string;
+  imageUrl?: string | undefined;
 };
