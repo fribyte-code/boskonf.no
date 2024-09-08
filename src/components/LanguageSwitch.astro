@@ -21,11 +21,10 @@ function getText() {
 }
 ---
 
-<a href={getUrl()}
-  ><span class="icon"><Fragment set:html={earth} /></span><span
-    >{getText()}</span
-  ></a
->
+<a href={getUrl()}>
+  <span class="icon"><Fragment set:html={earth} /></span>
+  <span>{getText()}</span>
+</a>
 
 <style>
   a {
