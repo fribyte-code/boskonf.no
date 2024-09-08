@@ -22,7 +22,6 @@ export function useTranslation(url?: URL, language?: keyof typeof langs) {
     const currentLanguage = url
       ? getLangFromUrl(url)
       : (language ?? defaultLang);
-    console.debug(url, language, currentLanguage);
     return langs[currentLanguage][key];
   };
 }
