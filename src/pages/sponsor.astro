@@ -9,15 +9,12 @@ const t = useTranslation(Astro.url);
     <div class = "content">
       <div class="imgTxtCont">
         <h1>{t("sponsors.becomeTitle")}</h1>
-     
         <div class="txtCont">
           <p>   
             <a rel="noopener" target="_blank" href="https://fribyte.no" class="heroTxt">Fribyte</a>
             {t("sponsors.become")}
             <p>{t("sponsors.contact1")}</p>
-            
-            <p>{t("sponsors.contact2")} <a href="mailto:sindre.kjelsrud@fribyte.no" class="heroTxt">sindre.kjelsrud@fribyte.no</a></p>
-
+            <p>{t("sponsors.contact2")}<a href="mailto:sindre.kjelsrud@fribyte.no" class="heroTxt">sindre.kjelsrud@fribyte.no</a></p>
             <p>{t("sponsors.contact3")}</p>
           </p>
         </div>
@@ -38,8 +35,6 @@ const t = useTranslation(Astro.url);
     max-width: var(--content-width);
     margin: 0 auto;
   }
-
-  
 
  .txtCont {
     width: 100%;
