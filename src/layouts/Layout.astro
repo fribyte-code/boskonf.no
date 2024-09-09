@@ -25,11 +25,11 @@ const lang = getLangFromUrl(Astro.url);
     />
   </head>
   <body>
-    <div class="main">
-      <Header />
-      <slot />
-      <Footer />
-    </div>
+    <!-- env insertion point is where Environment variables for the docker image will be inserted -->
+    <noscript id="env-insertion-point"></noscript>
+    <Header />
+    <slot />
+    <Footer />
   </body>
 </html>
 <style is:global>
