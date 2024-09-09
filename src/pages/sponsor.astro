@@ -5,27 +5,43 @@ const t = useTranslation(Astro.url);
 ---
 
 <Layout title="Bergen Open Source-konferanse">
-  <main>
-    <h1>{t("sponsors.becomeTitle")}</h1>
+  <div class ="container">
+    <div class = "content">
+      <div class="imgTxtCont">
+        <h1>{t("sponsors.becomeTitle")}</h1>
      
-    <div class="txtCont">
-      <p>   
-        <span class="heroTxt">Fribyte</span>
-        {t("sponsors.become")}
-        {t("sponsors.contact")}
-      </p>
-    </div>
+        <div class="txtCont">
+          <p>   
+            <a rel="noopener" target="_blank" href="https://fribyte.no" class="heroTxt">Fribyte</a>
+            {t("sponsors.become")}
+            <p>{t("sponsors.contact1")}</p>
+            
+            <p>{t("sponsors.contact2")} <a href="mailto:sindre.kjelsrud@fribyte.no" class="heroTxt">sindre.kjelsrud@fribyte.no</a></p>
+
+            <p>{t("sponsors.contact3")}</p>
+          </p>
+        </div>
 
 [fribyte]: https://fribyte.no
-    
-    </p>
-  </main>
+      </div>
+    </div>
+  </div>
 </Layout>
 
 <style>
-  main {
-    padding: 1rem;
+
+  .container {
+    background-color: #4439bb;
   }
+
+  .content {
+    color: #f1f1f1;
+    padding: 5rem 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+
+  
 
  .txtCont {
     width: 100%;
@@ -52,7 +68,7 @@ const t = useTranslation(Astro.url);
       width: 50%;
     }
     .txtCont {
-      width: 50%;
+      width: 100%;
     }
   }
 
