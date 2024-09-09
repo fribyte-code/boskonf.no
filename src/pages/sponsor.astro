@@ -1,18 +1,20 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { useTranslation } from "../i18n/utils";
+const t = useTranslation(Astro.url);
 ---
 
 <Layout title="Bergen Open Source-konferanse">
   <main>
-    <h1>Become a sponsor</h1>
-    <p>
-    [friByte][fribyte] gives sponsors the opportunity to reach a broad audience that includes students and established developers in the industry, during the Bergen Open Source conference. We want to make the conference day even more memorable to them! This can include everything from a brief presentation of the company to custom logo-marked socks and goodies. (Perhaps even some surprises that pleases the participants🎫🍺?)
-
-Do you also want to support the conference as a sponsor?
-
-Contact Sindre at 📨: [sindre.kjelsrud@fribyte.no](mailto:sindre.kjelsrud@fribyte.no).
-
-Please note that we have a limited number of spots available for lightning talks.
+    <h1>{t("sponsors.becomeTitle")}</h1>
+     
+    <div class="txtCont">
+      <p>   
+        <span class="heroTxt">Fribyte</span>
+        {t("sponsors.become")}
+        {t("sponsors.contact")}
+      </p>
+    </div>
 
 [fribyte]: https://fribyte.no
     
@@ -24,4 +26,34 @@ Please note that we have a limited number of spots available for lightning talks
   main {
     padding: 1rem;
   }
+
+ .txtCont {
+    width: 100%;
+
+    p {
+      font-size: 1.75rem;
+      font-weight: 300;
+    }
+    a {
+      width: max-content;
+      margin: 6rem 0 0 0;
+    }
+  }
+  .txtCont .heroTxt {
+    color: #12e8be;
+    font-weight: 500;
+  }
+
+   @media only screen and (min-width: 768px) {
+    .imgTxtCont {
+      flex-direction: row;
+    }
+    .imgCont {
+      width: 50%;
+    }
+    .txtCont {
+      width: 50%;
+    }
+  }
+
 </style>
