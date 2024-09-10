@@ -1,0 +1,175 @@
+---
+import { format, differenceInMinutes } from "date-fns";
+import FancyExternalLink from "../../FancyExternalLink.astro";
+import { useTranslation } from "../../../i18n/utils";
+
+interface Props {
+  from: string;
+  title: string;
+  to: string;
+  legend?: string;
+  subtitle?: string;
+  speaker?: string;
+  videoUrl?: string;
+  attachments?: { name: string; url: string }[];
+}
+
+const {
+  from,
+  title,
+  to,
+  legend = "",
+  subtitle = "",
+  speaker = "",
+  videoUrl,
+  attachments = [],
+} = Astro.props;
+
+const t = useTranslation(Astro.url);
+
+function formatTime(time: string) {
+  return format(time, "HH:mm");
+}
+function formatDuration(from: string, to: string) {
+  return differenceInMinutes(to, from) + " " + t("schedule.minutes");
+}
+---
+
+<div class="cont">
+  <div class="legendTimeCont">
+    <div class:list={["legend", legend]}></div>
+    <span class="time">{formatTime(from)}</span>
+  </div>
+
+  <div class="detailsCont">
+    <span class="title">{title}</span>
+    {subtitle && <p class="subtitle">{subtitle}</p>}
+    {
+      speaker && (
+        <div class="speakersCont">
+          <div class="speakerCont">
+            <div class="speakerDetailsCont">
+              <span class="speakerName">{speaker}</span>
+            </div>
+          </div>
+        </div>
+      )
+    }
+    <div class="attachments">
+      <ul>
+        {
+          attachments.map((attach) => (
+            <li>
+              <FancyExternalLink
+                text={attach.name}
+                url={attach.url}
+                light={false}
+              />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    {
+      videoUrl && (
+        <video controls width="100%" preload="metadata">
+          <source src={videoUrl} type="video/mp4" />
+        </video>
+      )
+    }
+  </div>
+  {to && <span class="duration">{formatDuration(from, to)}</span>}
+</div>
+
+<style>
+  .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .legendTimeCont {
+    width: 100%;
+    display: flex;
+  }
+  .legend {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin: 0.45rem 0.45rem 0.45rem 0;
+  }
+  .clear {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  .info {
+    background-color: #12e8be;
+  }
+  .talk {
+    background-color: #504ccb;
+  }
+
+  .time {
+    font-size: 1.25rem;
+  }
+  .detailsCont {
+    width: 100%;
+  }
+
+  .detailsCont .title {
+    font-size: 1.75rem;
+    font-weight: 500;
+  }
+  .detailsCont .subtitle {
+    width: 100%;
+    opacity: 0.75;
+    font-size: 1rem;
+  }
+
+  .detailsCont .speakersCont {
+    display: flex;
+    flex-direction: column;
+  }
+  .detailsCont .speakersCont .speakerCont {
+    display: flex;
+  }
+  .detailsCont .speakersCont .speakerDetailsCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .speakerTitle {
+      font-size: 0.75rem;
+      opacity: 0.75;
+    }
+  }
+
+  .duration {
+    opacity: 0.75;
+    text-wrap: nowrap;
+  }
+
+  .attachments {
+    li {
+      list-style-type: none;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cont {
+      flex-direction: row;
+      margin: 1rem 0;
+    }
+    .legendTimeCont {
+      width: 15%;
+      display: flex;
+    }
+    .detailsCont {
+      width: 70%;
+    }
+    .detailsCont .subtitle {
+      width: 90%;
+    }
+    .detailsCont .speakersCont {
+      display: flex;
+    }
+  }
+</style>

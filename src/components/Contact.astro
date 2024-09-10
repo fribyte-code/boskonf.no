@@ -1,0 +1,95 @@
+<div class="cont">
+  <div class="contactCont">
+    <span class="title">CONTACT</span>
+    <span>post@boskonf.no</span>
+  </div>
+  <div class="socialsCont">
+    <span class="title">SOCIAL</span>
+    <div class="socialCont">
+      <!-- <a href="/">
+        <img src="/contact/instagram.svg" alt="instagram icon" />
+      </a> -->
+      <a href="https://www.linkedin.com/company/boskonf">
+        <img src="/contact/linkedin.svg" alt="linkedin icon" />
+      </a>
+      <!-- <a href="/">
+        <img src="/contact/facebook.svg" alt="facebook icon" />
+      </a> -->
+    </div>
+  </div>
+</div>
+<style>
+  .cont {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: white;
+    padding: 4rem 2rem;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .contactCont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 0;
+    padding: 0 0 3rem 0px;
+
+    .title {
+      font-weight: 500;
+      font-size: 1.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+  .socialsCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    .title {
+      font-weight: 500;
+      font-size: 1.5rem;
+      letter-spacing: 0.5rem;
+    }
+  }
+  .socialCont {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      display: block;
+      height: 2rem;
+      width: 2rem;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cont {
+      flex-direction: row;
+      gap: 0;
+    }
+    .contactCont {
+      width: 50%;
+      gap: 2rem;
+      padding: 0;
+      border-right: 1px solid white;
+      border-bottom: 0;
+    }
+    .socialsCont {
+      width: 50%;
+      gap: 2rem;
+    }
+  }
+</style>

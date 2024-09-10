@@ -1,0 +1,135 @@
+---
+import ScheduleStack from "./ScheduleStack.astro";
+import { useTranslation, type langs } from "../../../i18n/utils";
+import { type BosKonfYear, type Program } from "../../../program/program";
+
+export async function getProgram(year: BosKonfYear, language: "en" | "no") {
+  let json = await import(`../../../program/${year}.${language}.json`);
+  return json.default as Program;
+}
+
+interface Props {
+  year: BosKonfYear;
+  language: keyof typeof langs;
+  withTitle?: boolean;
+}
+
+const { year, language, withTitle = false } = Astro.props;
+
+const program = await getProgram(year, language);
+
+const t = useTranslation(Astro.url);
+---
+
+<div class="cont">
+  {
+    withTitle && (
+      <div class="titleCont">
+        <h2>{t("schedule.title")}</h2>
+      </div>
+    )
+  }
+  <div class="legend">
+    <div class="workshop">
+      <div></div>
+      <span>{t("schedule.practical")}</span>
+    </div>
+    <div class="conference">
+      <div></div>
+      <span>{t("schedule.talk")}</span>
+    </div>
+    <div class="break">
+      <div></div>
+      <span>{t("schedule.break")}</span>
+    </div>
+  </div>
+
+  <div class="scheduleCont">
+    {
+      program.schedule.map((item) => (
+        <ScheduleStack
+          from={item.from}
+          title={item.title}
+          legend={item.type}
+          subtitle={item.description}
+          to={item.to}
+          speaker={item.speaker?.name}
+          videoUrl={item.videoUrl}
+          attachments={item.attachments}
+        />
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .cont {
+    max-width: var(--content-width);
+    color: #f1f1f1;
+    padding: 8rem 2rem;
+    margin: 0 auto;
+  }
+  .titleCont {
+    h2 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
+    p {
+      width: 100%;
+      margin: 0 0 2rem 0;
+    }
+  }
+  .legend {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .legend div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    div {
+      height: 1rem;
+      width: 1rem;
+      border-radius: 50%;
+    }
+  }
+  .legend .workshop div {
+    background-color: #12e8be;
+  }
+  .legend .conference div {
+    background-color: #504ccb;
+  }
+  .legend .break div {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+
+  /* schedule cont */
+  .scheduleCont {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .titleCont {
+      h2 {
+        font-size: 5rem;
+        line-height: 2rem;
+      }
+      p {
+        width: 80%;
+      }
+    }
+    .legend {
+      display: flex;
+      flex-direction: row;
+      gap: 4rem;
+    }
+    .scheduleCont {
+      gap: 0;
+    }
+  }
+</style>

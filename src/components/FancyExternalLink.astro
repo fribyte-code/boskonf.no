@@ -1,0 +1,36 @@
+---
+import arrow from "../../public/arrow-up-right.svg?raw";
+
+interface Props {
+  url: string;
+  text: string;
+  light?: boolean;
+}
+
+const { url, text, light = true } = Astro.props;
+
+const color = light ? "rgb(173, 241, 255) " : "rgb(33, 82, 187)";
+---
+
+<a href={url} target="_blank">
+  {text}
+  <Fragment set:html={arrow} />
+</a>
+
+<style define:vars={{ "link-color": color }}>
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--link-color);
+    font-size: 1.1em;
+    width: min-content;
+
+    border-bottom: 2px solid var(--link-color);
+
+    &:hover {
+      border-bottom: 4px solid var(--link-color);
+    }
+  }
+</style>

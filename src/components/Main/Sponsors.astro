@@ -1,0 +1,82 @@
+---
+import { useTranslation } from "../../i18n/utils";
+import type { Sponsor } from "../../program/program";
+
+interface Props {
+  sponsors: Sponsor[];
+}
+const { sponsors } = Astro.props;
+
+const t = useTranslation(Astro.url);
+---
+
+<div class="cont">
+  <h2>{t("sponsors.title")}</h2>
+  <div class="sponsorsCont">
+    {
+      sponsors.map((sponsor) => (
+        <a href={sponsor.url}>
+          <img src={sponsor.logo} alt={sponsor.name + " logo"} />
+        </a>
+      ))
+    }
+  </div>
+  <a class="cta" href="/sponsor">
+    {t("sponsors.apply")}
+    <img src="/arrow-up-right.svg" alt="arrow up right" />
+  </a>
+</div>
+
+<style>
+  .cont {
+    color: #f1f1f1;
+    padding: 6rem 2rem;
+
+    h2 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+  .greenTxt {
+    color: #12e8be;
+  }
+  .sponsorsCont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+    justify-content: center;
+    align-items: center;
+    margin: 6rem 0;
+
+    a {
+      width: 25%;
+      margin: 2rem 0;
+    }
+  }
+
+  .cta {
+    width: max-content;
+    background-color: #12e8be;
+    display: flex;
+    gap: 1rem;
+    color: #000;
+    padding: 1rem 2rem;
+    margin: 0 auto 2rem auto;
+    border-radius: 4rem;
+    border: 1px solid transparent;
+  }
+  .cta:hover {
+    /* border-color: #3f3f3f; */
+    background-color: #3ff1ce;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cont {
+      h2 {
+        font-size: 5rem;
+        line-height: 2rem;
+      }
+    }
+  }
+</style>

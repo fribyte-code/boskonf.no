@@ -1,0 +1,102 @@
+---
+import { getLangFromUrl, useTranslation } from "../../i18n/utils";
+import LanguageSwitch from "../LanguageSwitch.astro";
+
+import { getRelativeLocaleUrl } from "astro:i18n";
+function url(path: string) {
+  return getRelativeLocaleUrl(getLangFromUrl(Astro.url), path);
+}
+const t = useTranslation(Astro.url);
+---
+
+<header class="head">
+  <nav>
+    <a href={url("/")}
+      ><img src="/favicon.svg" style="width: 7rem;" alt="boskonf icon" /></a
+    >
+
+    <ul>
+      <li class="mobile-hide">
+        <a href={url("/")}>{t("header.home")}</a>
+      </li>
+      <li>
+        <a href={url("/archive/2023")}>{t("header.archive")}</a>
+      </li>
+      <li>
+        <LanguageSwitch />
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .head {
+    color: #f1f1f1;
+    padding: 1rem 2rem;
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+  .head nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    h1 {
+      width: 50%;
+      color: #f1f1f1;
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 0;
+    }
+
+    ul {
+      display: flex;
+      flex: 1 0;
+      gap: 1rem;
+      font-size: 1.125rem;
+
+      li {
+        position: relative;
+        cursor: pointer;
+      }
+      li::after {
+        width: 0%;
+        height: 5px;
+        content: "";
+        display: block;
+        background-color: #f1f1f1;
+        position: absolute;
+        bottom: -1;
+        left: 12%;
+        transition-duration: 0.25s;
+      }
+      li:hover::after {
+        width: 75%;
+      }
+    }
+  }
+
+  .mobile-hide {
+    visibility: hidden;
+    width: 0;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .head nav {
+      h1 {
+        width: 20%;
+      }
+      ul {
+        gap: 3rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 450px) {
+    .mobile-hide {
+      visibility: visible;
+      width: unset;
+    }
+  }
+</style>

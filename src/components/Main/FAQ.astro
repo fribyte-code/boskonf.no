@@ -1,0 +1,133 @@
+---
+import { getLangFromUrl, useTranslation } from "../../i18n/utils";
+
+const questionsNO: Question[] = [
+  {
+    question: "Hvem kan delta?",
+    answer:
+      "Vi inviterer både studenter og folk i arbeidslivet som er interessert i teknologi og åpen kildekode til å delta på konferansen.",
+  },
+  {
+    question: "Blir det mat?",
+    answer:
+      "Vi serverer mat. Gi beskjed om allergier eller spesielle behov ved påmelding.",
+  },
+  {
+    question: "Hvor finner konferansen sted?",
+    answer:
+      "Konferansen finner sted i Tivoli på det Akademiske Kvarter, Olav Kyrres Gate 49, Bergen.",
+  },
+  {
+    question: "Blir det bar?",
+    answer:
+      "Ja, det blir bar under konferansen. Vi serverer alkoholfrie alternativer.",
+  },
+  {
+    question: "Er det gratis?",
+    answer:
+      "Ja, konferansen er gratis of åpen for alle på grunn av våre snille sponsorer.",
+  },
+];
+
+const questionsEN: Question[] = [
+  {
+    question: "Who can attend?",
+    answer:
+      "We invite both students and people in the workforce who are interested in technology and open source to attend the conference.",
+  },
+  {
+    question: "Will there be food?",
+    answer:
+      "We will serve food. Please let us know about allergies or special needs when signing up.",
+  },
+  {
+    question: "Where is the conference located?",
+    answer:
+      "The conference is located at Tivoli at the Academic Quarter, Olav Kyrres Gate 49, Bergen.",
+  },
+  {
+    question: "Will there be a bar?",
+    answer:
+      "Yes, there will be a bar during the conference. We will serve non-alcoholic alternatives.",
+  },
+  {
+    question: "Is it free?",
+    answer:
+      "Yes, the conference is free and open to everyone because of our generous sponsors.",
+  },
+];
+
+type Question = {
+  question: string;
+  answer: string;
+};
+const language = getLangFromUrl(Astro.url);
+const t = useTranslation(Astro.url);
+---
+
+<div class="cont">
+  <h2>{t("faq.title")}</h2>
+  <span></span>
+  <div class="questionsCont">
+    {
+      (language == "no" ? questionsNO : questionsEN).map((q) => (
+        <div class="faqCardCont">
+          <span class="question">{q.question}</span>
+          <span class="answer">{q.answer}</span>
+        </div>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .cont {
+    max-width: var(--content-width);
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: white;
+    padding: 6rem 2rem;
+
+    h2 {
+      font-size: 3.5rem;
+      line-height: 4rem;
+      text-align: center;
+    }
+  }
+  .questionsCont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto 4rem auto;
+  }
+  .questionsCont .faqCardCont {
+    display: flex;
+    flex-direction: column;
+    border-left: 5px solid #12e8be;
+    padding: 0 0 0 0.5rem;
+
+    .question {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+    .answer {
+      margin: 0 0 0 0.5rem;
+      opacity: 0.75;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cont {
+      h2 {
+        font-size: 5rem;
+        line-height: 2rem;
+      }
+    }
+    .questionsCont {
+      /* width: 70%; */
+      margin: 0 auto 4rem auto;
+    }
+  }
+</style>

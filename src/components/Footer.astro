@@ -1,0 +1,75 @@
+---
+import LanguageSwitch from "./LanguageSwitch.astro";
+import sourcIcon from "../../public/footer/source.svg?raw";
+import { useTranslation } from "../i18n/utils";
+
+const t = useTranslation(Astro.url);
+---
+
+<footer>
+  <div class="content">
+    <nav>
+      <LanguageSwitch />
+      <span class="link"
+        ><a href="https://github.com/fribyte-code/boskonf.no" target="_blank"
+          ><Fragment set:html={sourcIcon} /><span>{t("footer.sourceLink")}</span
+          ></a
+        ></span
+      >
+    </nav>
+    <span class="text">{t("footer.text")}</span>
+  </div>
+</footer>
+
+<style>
+  footer {
+    max-width: var(--content-width);
+    margin: 0 auto;
+  }
+  .content {
+    display: grid;
+    grid-template: none / 1fr auto 1fr;
+    color: white;
+    padding: 3rem 1rem;
+  }
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .link {
+    font-size: 1rem;
+
+    a {
+      display: flex;
+      svg {
+        width: 1.5em;
+      }
+      span {
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  .text {
+    display: block;
+    opacity: 0.75;
+    margin: 1rem 0;
+    flex: 1 0;
+    span {
+      display: block;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .text {
+      margin-bottom: 2rem;
+    }
+  }
+</style>

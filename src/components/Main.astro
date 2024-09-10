@@ -1,0 +1,35 @@
+---
+import { getLangFromUrl } from "../i18n/utils";
+import Layout from "../layouts/Layout.astro";
+import type { Speaker } from "../program/program";
+import Contact from "./Contact.astro";
+import About from "./Main/About.astro";
+import FAQ from "./Main/FAQ.astro";
+import Hero from "./Main/Hero.astro";
+import Schedule, { getProgram } from "./Main/Schedule/Schedule.astro";
+import Speakers from "./Main/Speakers/Speakers";
+import Sponsors from "./Main/Sponsors.astro";
+
+const year = "2024";
+const language = getLangFromUrl(Astro.url);
+const program = await getProgram(year, language);
+
+const speakers: Speaker[] = [];
+for (const talk of program.schedule) {
+  if (talk.speaker) {
+    speakers.push(talk.speaker);
+  }
+}
+---
+
+<Layout title="Bergen Open Source-konferanse">
+  <main>
+    <Hero year={year} language={language} />
+    <About />
+    <Speakers speakers={speakers} language={language} />
+    <Schedule year={year} language={language} withTitle />
+    <Sponsors sponsors={program.sponsors} />
+    <FAQ language={language} />
+    <Contact />
+  </main>
+</Layout>
