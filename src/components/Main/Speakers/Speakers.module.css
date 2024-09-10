@@ -1,7 +1,6 @@
 .cont {
-    background-color: #1C1D23;
+    max-width: var(--content-width);
     color: #F1F1F1;
-    padding: 6rem 2rem;
 }
 .titleCont {
     display: flex;

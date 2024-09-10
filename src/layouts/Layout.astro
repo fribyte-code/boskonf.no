@@ -35,9 +35,11 @@ const lang = getLangFromUrl(Astro.url);
 <style is:global>
   :root {
     --content-width: 1200px;
+    --bg-color: #1c1f20;
   }
   html {
     font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
   }
   body {
     margin: 0;

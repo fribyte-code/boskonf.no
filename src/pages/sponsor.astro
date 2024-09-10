@@ -5,16 +5,26 @@ const t = useTranslation(Astro.url);
 ---
 
 <Layout title="Bergen Open Source-konferanse">
-  <div class ="container">
-    <div class = "content">
+  <div class="container">
+    <div class="content">
       <div class="imgTxtCont">
         <h1>{t("sponsors.becomeTitle")}</h1>
         <div class="txtCont">
-          <p>   
-            <a rel="noopener" target="_blank" href="https://fribyte.no" class="heroTxt">friByte</a>
+          <p>
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://fribyte.no"
+              class="heroTxt">friByte</a
+            >
             {t("sponsors.become")}
             <p>{t("sponsors.contact1")}</p>
-            <p>{t("sponsors.contact2")}<a href="mailto:sindre.kjelsrud@fribyte.no" class="heroTxt">sindre.kjelsrud@fribyte.no</a></p>
+            <p>
+              {t("sponsors.contact2")}<a
+                href="mailto:sindre.kjelsrud@fribyte.no"
+                class="heroTxt">sindre.kjelsrud@fribyte.no</a
+              >
+            </p>
             <p>{t("sponsors.contact3")}</p>
           </p>
         </div>
@@ -24,11 +34,6 @@ const t = useTranslation(Astro.url);
 </Layout>
 
 <style>
-
-  .container {
-    background-color: #4439bb;
-  }
-
   .content {
     color: #f1f1f1;
     padding: 5rem 2rem;
@@ -36,7 +41,7 @@ const t = useTranslation(Astro.url);
     margin: 0 auto;
   }
 
- .txtCont {
+  .txtCont {
     width: 100%;
 
     p {
@@ -53,7 +58,7 @@ const t = useTranslation(Astro.url);
     font-weight: 500;
   }
 
-   @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .imgTxtCont {
       flex-direction: row;
     }
@@ -64,5 +69,4 @@ const t = useTranslation(Astro.url);
       width: 100%;
     }
   }
-
 </style>

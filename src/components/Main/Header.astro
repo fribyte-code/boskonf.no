@@ -9,30 +9,27 @@ function url(path: string) {
 const t = useTranslation(Astro.url);
 ---
 
-<div class="container">
-  <header class="head">
-    <nav>
-      <h1><a href={url("/")}>{t("main.title")}</a></h1>
+<header class="head">
+  <nav>
+    <a href={url("/")}
+      ><img src="/favicon.svg" style="width: 7rem;" alt="boskonf icon" /></a
+    >
 
-      <ul>
-        <li class="mobile-hide">
-          <a href={url("/")}>{t("header.home")}</a>
-        </li>
-        <li>
-          <a href={url("/archive/2023")}>{t("header.archive")}</a>
-        </li>
-        <li class="lang-switch">
-          <LanguageSwitch />
-        </li>
-      </ul>
-    </nav>
-  </header>
-</div>
+    <ul>
+      <li class="mobile-hide">
+        <a href={url("/")}>{t("header.home")}</a>
+      </li>
+      <li>
+        <a href={url("/archive/2023")}>{t("header.archive")}</a>
+      </li>
+      <li>
+        <LanguageSwitch />
+      </li>
+    </ul>
+  </nav>
+</header>
 
 <style>
-  .container {
-    background-color: #6a67e8;
-  }
   .head {
     color: #f1f1f1;
     padding: 1rem 2rem;
@@ -77,9 +74,6 @@ const t = useTranslation(Astro.url);
       li:hover::after {
         width: 75%;
       }
-    }
-    .lang-switch {
-      margin-left: auto;
     }
   }
 

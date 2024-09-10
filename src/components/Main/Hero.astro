@@ -22,36 +22,33 @@ function formatDate(date: string) {
 const program = await getProgram(year, language);
 ---
 
-<div class="container">
-  <div class="content">
-    <div class="dateCont">
-      <div class="date">
-        <img src="/calendar.svg" alt="calendar icon" />
-        <span>{formatDate(program.date)}</span>
-      </div>
-      <div class="location">
-        <img src="/location.svg" alt="location icon" />
-        <span>{program.location}</span>
-      </div>
+<div class="content">
+  <div class="dateCont">
+    <div class="date">
+      <img src="/calendar.svg" alt="calendar icon" />
+      <span>{formatDate(program.date)}</span>
     </div>
+    <div class="location">
+      <img src="/location.svg" alt="location icon" />
+      <span>{program.location}</span>
+    </div>
+  </div>
 
-    <h2>{t("main.title")}</h2>
-    <h3>{t("main.subTitle")}</h3>
-    <p>
-      {t("main.description")}
-    </p>
+  <h2>{t("main.title")}</h2>
+  <h3>{t("main.subTitle")}</h3>
+  <p>
+    {t("main.description")}
+  </p>
 
+  <a href="https://skjema.fribyte.no/index.php/455472" target="_blank">
     <button>
       {t("main.signUp")}
       <img src="/arrow-up-right.svg" alt="arrow up right icon" />
     </button>
-  </div>
+  </a>
 </div>
 
 <style>
-  .container {
-    background-color: #6a67e8;
-  }
   .content {
     color: #f1f1f1;
     padding: 5rem 2rem;
@@ -81,9 +78,10 @@ const program = await getProgram(year, language);
     }
   }
   .dateCont .date {
-    background-color: #504ccb;
+    background-color: #00f5c9;
     padding: 0.25rem 1rem;
     border-radius: 20rem;
+    color: #1c1f20;
   }
   .dateCont .location {
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -95,7 +93,7 @@ const program = await getProgram(year, language);
   h2 {
     font-size: 3.5rem;
     font-weight: 600;
-    line-height: 4rem;
+    line-height: 7rem;
   }
   p {
     width: 90%;

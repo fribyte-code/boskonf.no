@@ -4,30 +4,25 @@ import FancyExternalLink from "../FancyExternalLink.astro";
 const t = useTranslation(Astro.url);
 ---
 
-<div class="container">
-  <div class="content">
-    <div class="imgTxtCont">
-      <div class="imgCont">
-        <img src="/mathias_present.jpg" alt="One of last years speakers" />
-      </div>
-      <div class="txtCont">
-        <p>
-          <span class="heroTxt">BosKonf</span>
-          {t("about.about")}
-        </p>
-        <FancyExternalLink
-          url="https://fribyte.no/om/"
-          text={t("about.learnmore")}
-        />
-      </div>
+<div class="content">
+  <div class="imgTxtCont">
+    <div class="imgCont">
+      <img src="/mathias_present.jpg" alt="One of last years speakers" />
+    </div>
+    <div class="txtCont">
+      <p>
+        <span class="heroTxt">BOS konferansen</span>
+        {t("about.about")}
+      </p>
+      <FancyExternalLink
+        url="https://fribyte.no/om/"
+        text={t("about.learnmore")}
+      />
     </div>
   </div>
 </div>
 
 <style>
-  .container {
-    background-color: #4439bb;
-  }
   .content {
     max-width: var(--content-width);
     color: #f1f1f1;
