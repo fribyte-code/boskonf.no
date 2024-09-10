@@ -16,7 +16,7 @@
       "description": "Sindre gir en rask introduksjon til Open Source og forteller om fordelene, kjente prosjekter og hvor du starter.",
       "speaker": {
         "name": "Sindre Kjelsrud",
-        "description": "Nyutdanna utvikler, Capgeminis",
+        "description": "Utvikler, Capgemini",
         "imageUrl": "/speakers/Sindre-Kjelsrud.webp"
       },
       "image": "TODO: path to some image in static dir",
