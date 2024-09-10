@@ -14,11 +14,6 @@ export default function Speakers({ speakers, language }: Props) {
       <div className={Styles.titleCont}>
         <div className={Styles.details}>
           <h2>{t("speakers.title")}</h2>
-          <p>
-            TODO: Join 400 others in Manhattan, NY for a full day of inspiring
-            keynotes and new connections at the premier conference for software
-            Product Managers
-          </p>
         </div>
       </div>
       <div className={Styles.speakersCont}>
