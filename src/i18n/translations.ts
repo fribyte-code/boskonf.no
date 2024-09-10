@@ -6,7 +6,7 @@ export const languages = {
 export const no = {
   "header.home": "Hjem",
   "header.archive": "Arkiv",
-  "main.title": "BosKonf",
+  "main.title": "En dag fylt med åpen kildekode i Bergen!",
   "main.subTitle": "Bergen Open Source Konferanse",
   "main.description":
     "Bergen Open Source er en årlig teknologikonferanse i Bergen drevet av studenter og andre frivillige. Konferansen har fokus på fri åpen kildekode og åpne data.",
@@ -23,9 +23,9 @@ export const no = {
   "sponsors.apply": "Kontakt oss for å bli sponsor",
   "speakers.title": "Våre talere",
   "faq.title": "Spørsmål?",
-  "archive.title": "BosKonf arkiv",
+  "archive.title": "BOSkonf arkiv",
   "footer.sourceLink": "Kildekode",
-  "footer.text": "BosKonf, laget av friByte.",
+  "footer.text": "BOSkonf, laget av friByte.",
   "sponsors.becomeTitle": "Bli sponsor",
   "sponsors.become":
     "gir sponsorer muligheten til å nå en bred målgruppe som inkluderer studenter og etablerte utviklere innen bransjen, under Bergen Open Source-konferansen. Vi ønsker selvsagt å gjøre konferansedagen enda mer minneverdig for dem! Dette kan inkludere alt i fra en kort presentasjon av selskapet til tilpassede logo-merkede sokker og godbiter. (Kanskje til og med noen overraskelser som gleder deltakerne🎫🍺?)",
@@ -37,7 +37,7 @@ export const no = {
 export const en: typeof no = {
   "header.home": "Home",
   "header.archive": "Archive",
-  "main.title": "BosKonf",
+  "main.title": "A day filled with open source in Bergen!",
   "main.subTitle": "Bergen Open Source Conference",
   "main.description":
     "Bergen Open Source is a yearly tech-conference in Bergen by students and other volunteers. The key focus is free open source and open data.",
@@ -54,9 +54,9 @@ export const en: typeof no = {
   "sponsors.apply": "Contact us to become a sponsor",
   "speakers.title": "Our speakers",
   "faq.title": "Questions?",
-  "archive.title": "BosKonf Archive",
+  "archive.title": "BOSkonf Archive",
   "footer.sourceLink": "Source code",
-  "footer.text": "BosKonf, created by friByte.",
+  "footer.text": "BOSkonf, created by friByte.",
   "sponsors.becomeTitle": "Become a sponsor",
   "sponsors.become":
     "gives sponsors the opportunity to reach a broad audience that includes students and established developers in the industry, during the Bergen Open Source conference. We want to make the conference day even more memorable to them! This can include everything from a brief presentation of the company to custom logo-marked socks and goodies. (Perhaps even some surprises that pleases the participants🎫🍺?)",
