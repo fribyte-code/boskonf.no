@@ -18,7 +18,7 @@ export function useTranslation(url?: URL, language?: keyof typeof langs) {
     throw new Error("Either url or language must be defined");
   }
 
-  return function t(key: keyof typeof no): string {
+  return function t(key: keyof typeof no): string | string[] {
     const currentLanguage = url
       ? getLangFromUrl(url)
       : (language ?? defaultLang);

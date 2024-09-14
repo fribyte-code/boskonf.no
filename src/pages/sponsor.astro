@@ -29,9 +29,9 @@ const goods = t("sponsors.goods");
             <p>{t("sponsors.price")}</p>
             <div>
               {
-                goods.map((item: any, index: any) => (
-                  <ul key={index}>
-                    <li>{item.item}</li>
+                (goods as string[]).map((item) => (
+                  <ul>
+                    <li>{item}</li>
                   </ul>
                 ))
               }

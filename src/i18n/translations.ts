@@ -31,25 +31,17 @@ export const no = {
     "gir sponsorer muligheten til å nå en bred målgruppe som inkluderer studenter og etablerte utviklere innen bransjen, under Bergen Open Source-konferansen. Vi ønsker selvsagt å gjøre konferansedagen enda mer minneverdig for dem! Dette kan inkludere alt i fra en kort presentasjon av selskapet til tilpassede logo-merkede sokker og godbiter. (Kanskje til og med noen overraskelser som gleder deltakerne🎫🍺?)",
   "sponsors.contact1": "Ønsker du også å støtte konferansen som sponsor?",
   "sponsors.contact2": "Ta kontakt med Sindre på 📨: ",
-  "sponsors.price":"Vi har en sponsorpakke til 5000,- som inneholder følgende ting: ",
-  "sponsors.goods":[
-    {
-      "item":"Vår takknemlighet via SoMe innlegg",
-    },
-    {
-      "item":"Logo på nettside",
-    },
-    {
-      "item":"Roll-up banner på konferanse (sponsor må stille med egen)",
-    },
-    {
-      "item":"Bruke BOSkonf logo selv",
-    },
-    {
-      "item":"Jobbutlysninger kan bli nevnt i introduksjon og avslutning av konferansen (høyst relevant for både studenter og deltakere allerede i jobb)",
-    },
+  "sponsors.price":
+    "Vi har en sponsorpakke til 5000,- som inneholder følgende ting: ",
+  "sponsors.goods": [
+    "Vår takknemlighet via SoMe innlegg",
+    "Logo på nettside",
+    "Roll-up banner på konferanse (sponsor må stille med egen)",
+    "Bruke BOSkonf logo selv",
+    "Jobbutlysninger kan bli nevnt i introduksjon og avslutning av konferansen (høyst relevant for både studenter og deltakere allerede i jobb)",
   ],
-  "sponsors.highest": "I tillegg vil høyeste spons få et eget tidsrom for lynpresentasjon fra deres eget selskap (må være relatert til Open Source)."
+  "sponsors.highest":
+    "I tillegg vil høyeste spons få et eget tidsrom for lynpresentasjon fra deres eget selskap (må være relatert til Open Source).",
 };
 export const en: typeof no = {
   "header.home": "Home",
@@ -80,23 +72,15 @@ export const en: typeof no = {
   "sponsors.contact1":
     "Do you also want to support the conference as a sponsor?",
   "sponsors.contact2": "Contact Sindre at 📨: ",
-  "sponsors.price": "We have a sponsor package for 5000,- which includes the following items:",
+  "sponsors.price":
+    "We have a sponsor package for 5000,- which includes the following items:",
   "sponsors.goods": [
-    {
-      "item": "Our gratitude via SoMe posts"
-    },
-    {
-      "item": "Logo on website"
-    },
-    {
-      "item": "Roll-up banner at the conference (sponsor must provide their own)"
-    },
-    {
-      "item": "Use of BOSkonf logo themselves"
-    },
-    {
-      "item": "Job postings can be mentioned in the introduction and conclusion of the conference (highly relevant for both students and participants already in jobs)"
-    }
+    "Our gratitude via SoMe posts",
+    "Logo on website",
+    "Roll-up banner at the conference (sponsor must provide their own)",
+    "Use of BOSkonf logo themselves",
+    "Job postings can be mentioned in the introduction and conclusion of the conference (highly relevant for both students and participants already in jobs)",
   ],
-  "sponsors.highest": "In addition, the highest sponsor will get a dedicated time slot for a lightning presentation from their company (must be related to Open Source)."
+  "sponsors.highest":
+    "In addition, the highest sponsor will get a dedicated time slot for a lightning presentation from their company (must be related to Open Source).",
 };
