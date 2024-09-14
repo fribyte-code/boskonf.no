@@ -12,24 +12,20 @@
       "type": "info"
     },
     {
+      "title": "Kort introduksjon",
+      "description": "Av friBytes egne Christian K. Engelsen.",
+      "image": "TODO: path to some image in static dir",
+      "from": "2023-11-02T17:00:00",
+      "to": "2023-11-02T17:10:00",
+      "type": "info"
+    },
+    {
       "title": "Introduksjon til Open Source",
       "description": "Sindre gir en rask introduksjon til Open Source og forteller om fordelene, kjente prosjekter og hvor du starter.",
       "speaker": {
         "name": "Sindre Kjelsrud",
-        "description": "Nyutdanna utvikler, Capgeminis",
+        "description": "Utvikler, Capgemini",
         "imageUrl": "/speakers/Sindre-Kjelsrud.webp"
-      },
-      "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T17:00:00",
-      "to": "2024-11-07T17:10:00",
-      "type": "talk"
-    },
-    {
-      "title": "Lyntale",
-      "description": "Ledig lyntale slot",
-      "speaker": {
-        "name": "Ukjent taler",
-        "description": "Er dette deg? Ta kontakt!"
       },
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T17:10:00",
@@ -41,7 +37,7 @@
       "description": "Vi har sett på kvinneandelen i tekniske roller i NAV IT, og tallene er ikke oppmuntrende. Utforsk IT-verdenens usynlige barrierer og hvordan vi kan skape et mer inkluderende arbeidsliv. Hør direkte fra kvinner i tech og få fem konkrete tips for å øke inkludering og trivsel for alle!",
       "speaker": {
         "name": "Caroline Winther & Aurora Christine Hofman",
-        "description": "Data Scientists NAV"
+        "description": "Data Engineer & Utvikler, NAV"
       },
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T17:30:00",
@@ -82,18 +78,6 @@
       "type": "talk"
     },
     {
-      "title": "Lyntale",
-      "description": "Ledig lyntale slot",
-      "speaker": {
-        "name": "Ukjent taler",
-        "description": "Er dette deg? Ta kontakt!"
-      },
-      "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T19:30:00",
-      "to": "2024-11-07T19:40:00",
-      "type": "talk"
-    },
-    {
       "title": "Tale",
       "description": "Ledig tale slot",
       "speaker": {
@@ -101,12 +85,24 @@
         "description": "Er dette deg? Ta kontakt!"
       },
       "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T19:40:00",
+      "from": "2024-11-07T19:30:00",
+      "to": "2024-11-07T19:50:00",
+      "type": "talk"
+    },
+    {
+      "title": "Lyntale fra en sponsor",
+      "description": "Ledig lyntale slot",
+      "speaker": {
+        "name": "Ukjent taler",
+        "description": "Er dette deg? Ta kontakt!"
+      },
+      "image": "TODO: path to some image in static dir",
+      "from": "2024-11-07T19:50:00",
       "to": "2024-11-07T20:00:00",
       "type": "talk"
     },
     {
-      "title": "Interaktiv Pubquiz",
+      "title": "Interaktiv quiz",
       "description": "I tradisjon tro blir det en god gammeldags quiz sesjon.",
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T20:00:00",
@@ -122,7 +118,7 @@
       "type": "info"
     },
     {
-      "title": "Fest på Kvarteret",
+      "title": "Sosial mingling @ Kvarteret",
       "description": "Bli med oss videre for en hyggelig prat.",
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T21:10:00",

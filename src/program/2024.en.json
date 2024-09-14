@@ -12,24 +12,20 @@
       "type": "info"
     },
     {
+      "title": "Short introduction",
+      "description": "By friBytes' own Christian K. Engelsen.",
+      "image": "TODO: path to some image in static dir",
+      "from": "2023-11-02T17:00:00",
+      "to": "2023-11-02T17:10:00",
+      "type": "info"
+    },
+    {
       "title": "Introduction to Open Source",
       "description": "Sindre gives a quick introduction to Open Source and talks about its benefits, well-known projects, and how to get started.",
       "speaker": {
         "name": "Sindre Kjelsrud",
-        "description": "Recent graduate developer, Capgemini",
+        "description": "Software Engineer, Capgemini",
         "imageUrl": "/speakers/Sindre-Kjelsrud.webp"
-      },
-      "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T17:00:00",
-      "to": "2024-11-07T17:10:00",
-      "type": "talk"
-    },
-    {
-      "title": "Lightning Talk",
-      "description": "Available lightning talk slot",
-      "speaker": {
-        "name": "Unknown speaker",
-        "description": "Is this you? Get in touch!"
       },
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T17:10:00",
@@ -41,7 +37,7 @@
       "description": "We have looked at the percentage of women in technical roles at NAV IT, and the numbers are not encouraging. Explore the invisible barriers in the IT world and how we can create a more inclusive work environment. Hear directly from women in tech and get five concrete tips for increasing inclusion and well-being for everyone!",
       "speaker": {
         "name": "Caroline Winther & Aurora Christine Hofman",
-        "description": "Data Scientists NAV"
+        "description": "Data Engineer & Developer, NAV"
       },
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T17:30:00",
@@ -82,18 +78,6 @@
       "type": "talk"
     },
     {
-      "title": "Lightning Talk",
-      "description": "Available lightning talk slot",
-      "speaker": {
-        "name": "Unknown speaker",
-        "description": "Is this you? Get in touch!"
-      },
-      "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T19:30:00",
-      "to": "2024-11-07T19:40:00",
-      "type": "talk"
-    },
-    {
       "title": "Speech",
       "description": "Available speech slot",
       "speaker": {
@@ -101,12 +85,24 @@
         "description": "Is this you? Get in touch!"
       },
       "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T19:40:00",
+      "from": "2024-11-07T19:30:00",
+      "to": "2024-11-07T19:50:00",
+      "type": "talk"
+    },
+    {
+      "title": "Lightning Talk from a sponsor",
+      "description": "Available lightning talk slot",
+      "speaker": {
+        "name": "Unknown speaker",
+        "description": "Is this you? Get in touch!"
+      },
+      "image": "TODO: path to some image in static dir",
+      "from": "2024-11-07T19:50:00",
       "to": "2024-11-07T20:00:00",
       "type": "talk"
     },
     {
-      "title": "Interactive Pubquiz",
+      "title": "Interactive quiz",
       "description": "As tradition dictates, there will be a good old-fashioned quiz session.",
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T20:00:00",
@@ -122,7 +118,7 @@
       "type": "info"
     },
     {
-      "title": "Party at Kvarteret",
+      "title": "Socializing @ Kvarteret",
       "description": "Join us throughout the evening for a nice talk.",
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T21:10:00",
