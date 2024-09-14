@@ -1,14 +1,9 @@
-# This workflow will build a .NET project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
-
-name: Frontend Build and Push to DockerHub
+name: Build & push Docker image (if main branch)
 
 on:
   push:
-    # branches: ["main"] # Revert to main when merged
     branches: ["*"]
   pull_request:
-    # branches: ["main"] # Revert to main when merged
     branches: ["*"]
 
 jobs:
@@ -35,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          push: ${{ github.event_name == 'push' }}
+          push: ${{ github.ref == 'refs/heads/main' }}
           tags: fribyte/boskonf.no:latest
           build-args: |
             APP_BUILD_DATE=${{ github.event.repository.updated_at}}
