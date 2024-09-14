@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import { useTranslation } from "../i18n/utils";
 const t = useTranslation(Astro.url);
-const goods = t("sponsors.goods");
+const goods = t<string[]>("sponsors.goods");
 ---
 
 <Layout title="Bergen Open Source-konferanse">
@@ -29,7 +29,7 @@ const goods = t("sponsors.goods");
             <p>{t("sponsors.price")}</p>
             <div>
               {
-                (goods as string[]).map((item) => (
+                goods.map((item) => (
                   <ul>
                     <li>{item}</li>
                   </ul>
