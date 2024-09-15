@@ -4,6 +4,7 @@ export type Program = {
   date: string;
   location: string;
   address: string;
+  locationurl: string;
   /**
    * URL to buy tickets
    */

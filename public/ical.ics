@@ -29,7 +29,7 @@ DTSTART;TZID=Europe/Berlin:20241107T163000
 DTEND;TZID=Europe/Berlin:20241107T211000
 SUMMARY:Bergen Open Source conference
 URL:https://boskonf.no
-LOCATION:https://www.openstreetmap.org/node/6137059358
+LOCATION:Olav Kyrres gate 49, Bergen
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Bergen Open Source conference

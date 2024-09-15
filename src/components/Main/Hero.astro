@@ -30,7 +30,7 @@ const program = await getProgram(year, language);
         <span>{formatDate(program.date)}</span>
       </div>
     </a>
-    <a href="https://www.openstreetmap.org/node/6137059358" target="_blank">
+    <a href={program.locationurl} target="_blank">
       <div class="location">
         <img src="/location.svg" alt="location icon" />
         <span>{program.location}</span>
