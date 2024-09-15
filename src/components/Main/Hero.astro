@@ -24,14 +24,18 @@ const program = await getProgram(year, language);
 
 <div class="content">
   <div class="dateCont">
-    <div class="date">
-      <img src="/calendar.svg" alt="calendar icon" />
-      <span>{formatDate(program.date)}</span>
-    </div>
-    <div class="location">
-      <img src="/location.svg" alt="location icon" />
-      <span>{program.location}</span>
-    </div>
+    <a href="/ical.ics">
+      <div class="date">
+        <img src="/calendar.svg" alt="calendar icon" />
+        <span>{formatDate(program.date)}</span>
+      </div>
+    </a>
+    <a href={program.locationurl} target="_blank">
+      <div class="location">
+        <img src="/location.svg" alt="location icon" />
+        <span>{program.location}</span>
+      </div>
+    </a>
   </div>
 
   <h2>{t("main.title")}</h2>
