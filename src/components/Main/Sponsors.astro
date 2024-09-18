@@ -12,16 +12,16 @@ const t = useTranslation(Astro.url);
 
 <div class="cont">
   <h2>{t("sponsors.title")}</h2>
-  <div class="sponsorsCont">
+  <div class="sponsors-container">
     {
       sponsors.map((sponsor) => (
-        <a href={sponsor.url}>
+        <a href={sponsor.url} target="_blank">
           <img src={sponsor.logo} alt={sponsor.name + " logo"} />
         </a>
       ))
     }
   </div>
-  <a class="cta" href="/sponsor">
+  <a class="call-to-action" href="/sponsor">
     {t("sponsors.apply")}
     <img src="/arrow-up-right.svg" alt="arrow up right" />
   </a>
@@ -38,24 +38,27 @@ const t = useTranslation(Astro.url);
       text-align: center;
     }
   }
-  .greenTxt {
-    color: #12e8be;
-  }
-  .sponsorsCont {
+
+  .sponsors-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 7%;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     margin: 6rem 0;
+    gap: 1rem;
 
     a {
-      width: 25%;
-      margin: 2rem 0;
+      max-width: 300px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 
-  .cta {
+  .call-to-action {
     width: max-content;
     background-color: #12e8be;
     display: flex;
@@ -66,7 +69,7 @@ const t = useTranslation(Astro.url);
     border-radius: 4rem;
     border: 1px solid transparent;
   }
-  .cta:hover {
+  .call-to-action:hover {
     /* border-color: #3f3f3f; */
     background-color: #3ff1ce;
   }
