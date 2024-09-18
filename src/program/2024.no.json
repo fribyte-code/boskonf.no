@@ -2,7 +2,7 @@
   "date": "2024-11-07",
   "location": "Kvarteret, Bergen",
   "address": "Olav Kyrres gate 49, 5015 Bergen",
-  "locationurl":"https://www.openstreetmap.org/node/6137059358",
+  "locationurl": "https://www.openstreetmap.org/node/6137059358",
   "schedule": [
     {
       "title": "Dørene åpner",
@@ -142,6 +142,11 @@
       "name": "friByte",
       "logo": "/sponsors/friByte.svg",
       "url": "https://fribyte.no/"
+    },
+    {
+      "name": "Variant",
+      "logo": "/sponsors/variant.svg",
+      "url": "https://www.variant.no/"
     }
   ]
 }
