@@ -68,11 +68,12 @@
       "type": "talk"
     },
     {
-      "title": "Lyntale",
-      "description": "Ledig lyntale slot",
+      "title": "Om Bærekraftig Emballasje til Open Source Moduler",
+      "description": "Moderne open source moduler pakkes ofte inn i Docker containere, NPM, Maven eller Nuget pakker. Dette gjør jobben fryktelig mye mer lettvint for både programvare- og plattform utviklere. Likevel, fører disse pakkene med seg en del overhead. I denne presentasjonen vil vi se på implikasjonene for bærekraften til programvaren vår og hva vi eventuelt kunne gjort med det.",
       "speaker": {
-        "name": "Ukjent taler",
-        "description": "Er dette deg? Ta kontakt!"
+        "name": "Kent Inge Fagerland Simonsen",
+        "description": "Konsulent, TietoEvry (Guru, friByte)",
+        "imageUrl":"/speakers/Kent-Inge-Fagerland-Simonsen.webp"
       },
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T19:20:00",
@@ -92,7 +93,7 @@
       "type": "talk"
     },
     {
-      "title": "Lyntale fra en sponsor",
+      "title": "Lyntale",
       "description": "Ledig lyntale slot",
       "speaker": {
         "name": "Ukjent taler",
@@ -104,28 +105,36 @@
       "type": "talk"
     },
     {
-      "title": "Interaktiv quiz",
-      "description": "I tradisjon tro blir det en god gammeldags quiz sesjon.",
+      "title": "Takke for kvelden",
+      "description": "Takk for at du kom, de som vil delta på quiz blir igjen!",
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T20:00:00",
-      "to": "2024-11-07T21:00:00",
-      "type": "break"
-    },
-    {
-      "title": "Takke for kvelden",
-      "description": "Takk for at du kom.",
-      "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T21:00:00",
-      "to": "2024-11-07T21:10:00",
+      "to": "2024-11-07T20:15:00",
       "type": "info"
     },
     {
-      "title": "Sosial mingling @ Kvarteret",
-      "description": "Bli med oss videre for en hyggelig prat.",
+      "title": "Sosial mingling før quiz",
+      "description": "Imens friByte og andre frivillige rydder, kan resten mingle og vente på quiz.",
       "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T21:10:00",
-      "to": "2024-11-07T23:59:00",
+      "from": "2024-11-07T20:15:00",
+      "to": "2024-11-07T20:30:00",
       "type": "break"
+    },
+    {
+      "title": "Pubkviss",
+      "description": "I tradisjon tro blir det en god gammeldags quiz sesjon. Denne gang om foredragene holdt i løpet av kvelden samt IT-relaterte spørsmål!",
+      "image": "TODO: path to some image in static dir",
+      "from": "2024-11-07T20:30:00",
+      "to": "2024-11-07T21:30:00",
+      "type": "info"
+    },
+    {
+      "title": "Kvelden ferdig",
+      "description": "Håper du hadde en fin kveld og likte årets konferanse :)",
+      "image": "TODO: path to some image in static dir",
+      "from": "2024-11-07T21:30:00",
+      "to": "",
+      "type": "info"
     }
   ],
   "sponsors": [
