@@ -68,11 +68,12 @@
       "type": "talk"
     },
     {
-      "title": "Lightning Talk",
-      "description": "Available lightning talk slot",
+      "title": "On Sustainable Packaging for Open Source Modules",
+      "description": "Modern open source modules are often packaged in Docker containers, NPM, Maven, or NuGet packages. This makes life significantly easier for both software and platform developers. However, these packages come with a certain amount of overhead. In this presentation, we will examine the implications for the sustainability of our software and what we might be able to do about it.",
       "speaker": {
-        "name": "Unknown speaker",
-        "description": "Is this you? Get in touch!"
+        "name": "Kent Inge Fagerland Simonsen",
+        "description": "Konsulent, TietoEvry (Guru, friByte)",
+        "imageUrl":"/speakers/Kent-Inge-Fagerland-Simonsen.webp"
       },
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T19:20:00",
@@ -92,7 +93,7 @@
       "type": "talk"
     },
     {
-      "title": "Lightning Talk from a sponsor",
+      "title": "Lightning Talk",
       "description": "Available lightning talk slot",
       "speaker": {
         "name": "Unknown speaker",
@@ -104,28 +105,36 @@
       "type": "talk"
     },
     {
-      "title": "Interactive quiz",
-      "description": "As tradition dictates, there will be a good old-fashioned quiz session.",
+      "title": "Thanks",
+      "description": "Thank you for coming, those who wanna participate in the quiz stays behind!",
       "image": "TODO: path to some image in static dir",
       "from": "2024-11-07T20:00:00",
-      "to": "2024-11-07T21:00:00",
-      "type": "break"
-    },
-    {
-      "title": "Thanks",
-      "description": "Thank you for coming.",
-      "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T21:00:00",
-      "to": "2024-11-07T21:10:00",
+      "to": "2024-11-07T20:15:00",
       "type": "info"
     },
     {
-      "title": "Socializing @ Kvarteret",
-      "description": "Join us throughout the evening for a nice talk.",
+      "title": "Socializing before quiz",
+      "description": "While friByte and other volunteers cleans up, participants kan mingle and wait for the quiz.",
       "image": "TODO: path to some image in static dir",
-      "from": "2024-11-07T21:10:00",
-      "to": "2024-11-07T23:59:00",
+      "from": "2024-11-07T20:15:00",
+      "to": "2024-11-07T20:30:00",
       "type": "break"
+    },
+    {
+      "title": "Pubquiz",
+      "description": "As tradition dictates, there will be a good old-fashioned quiz session. This time about the talks given during the conference as well as IT-related questions.",
+      "image": "TODO: path to some image in static dir",
+      "from": "2024-11-07T20:30:00",
+      "to": "2024-11-07T21:30:00",
+      "type": "info"
+    },
+    {
+      "title": "The eveneing is finished",
+      "description": "We hope you had a nice evening and liked this years iteration of the conference :)",
+      "image": "TODO: path to some image in static dir",
+      "from": "2024-11-07T21:30:00",
+      "to": "",
+      "type": "info"
     }
   ],
   "sponsors": [
