@@ -2,11 +2,12 @@
 import { getLangFromUrl } from "../i18n/utils";
 import Layout from "../layouts/Layout.astro";
 import type { Speaker } from "../program/program";
+import { getProgram } from "../program/programUtils";
 import Contact from "./Contact.astro";
 import About from "./Main/About.astro";
 import FAQ from "./Main/FAQ.astro";
 import Hero from "./Main/Hero.astro";
-import Schedule, { getProgram } from "./Main/Schedule/Schedule.astro";
+import Schedule from "./Main/Schedule/Schedule.astro";
 import Speakers from "./Main/Speakers/Speakers";
 import Sponsors from "./Main/Sponsors.astro";
 

@@ -4,7 +4,7 @@ export type Program = {
   date: string;
   location: string;
   address: string;
-  locationurl: string;
+  locationUrl: string;
   /**
    * URL to buy tickets
    */
@@ -26,7 +26,7 @@ export type ProgramEvent = {
 };
 
 export type EventAttachment = {
-  name: "Presentasjon" | string;
+  name: "Presentasjon" | "Presentation" | string;
   url: string;
 };
 

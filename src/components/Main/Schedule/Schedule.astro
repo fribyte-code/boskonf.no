@@ -1,12 +1,8 @@
 ---
 import ScheduleStack from "./ScheduleStack.astro";
 import { useTranslation, type langs } from "../../../i18n/utils";
-import { type BosKonfYear, type Program } from "../../../program/program";
-
-export async function getProgram(year: BosKonfYear, language: "en" | "no") {
-  let json = await import(`../../../program/${year}.${language}.json`);
-  return json.default as Program;
-}
+import { type BosKonfYear } from "../../../program/program";
+import { getProgram } from "../../../program/programUtils";
 
 interface Props {
   year: BosKonfYear;

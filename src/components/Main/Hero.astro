@@ -1,7 +1,7 @@
 ---
 import { langs, useTranslation } from "../../i18n/utils";
 import type { BosKonfYear } from "../../program/program";
-import { getProgram } from "./Schedule/Schedule.astro";
+import { getProgram } from "../../program/programUtils";
 const t = useTranslation(Astro.url);
 
 interface Props {
@@ -30,7 +30,7 @@ const program = await getProgram(year, language);
         <span>{formatDate(program.date)}</span>
       </div>
     </a>
-    <a href={program.locationurl} target="_blank">
+    <a href={program.locationUrl} target="_blank">
       <div class="location">
         <img src="/location.svg" alt="location icon" />
         <span>{program.location}</span>
