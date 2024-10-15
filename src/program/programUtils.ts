@@ -2,11 +2,10 @@ import type { BosKonfYear, Program } from "./program";
 
 export async function getProgram(year: BosKonfYear, language: "en" | "no") {
   let json = await import(`./${year}.json`);
-  const translatedJson = replaceDefaultKeyValWithLanguageKeyValInPlace(
+  return replaceDefaultKeyValWithLanguageKeyValInPlace(
     json.default as Program,
     language,
   );
-  return translatedJson;
 }
 
 /**
@@ -25,8 +24,9 @@ export function replaceDefaultKeyValWithLanguageKeyValInPlace<T extends Object>(
     return json;
   }
 
-  traverseAndReplaceKeyValWithSuffixValue(json, "_" + language);
-  return json;
+  const jsonCopy = JSON.parse(JSON.stringify(json)); // Deep copy to avoid modifying the original object
+  traverseAndReplaceKeyValWithSuffixValue(jsonCopy, "_" + language);
+  return jsonCopy;
 }
 
 /**
