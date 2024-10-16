@@ -1,7 +1,7 @@
 import type { BosKonfYear, Program } from "./program";
 
 export async function getProgram(year: BosKonfYear, language: "en" | "no") {
-  let json = await import(`./${year}.json`);
+  let json = await import(`./${year}.ts`);
   return replaceDefaultKeyValWithLanguageKeyValInPlace(
     json.default as Program,
     language,
