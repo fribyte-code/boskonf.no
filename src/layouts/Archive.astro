@@ -1,10 +1,9 @@
 ---
-import Schedule, {
-  getProgram,
-} from "../components/Main/Schedule/Schedule.astro";
+import Schedule from "../components/Main/Schedule/Schedule.astro";
 import Sponsors from "../components/Main/Sponsors.astro";
 import { getLangFromUrl, useTranslation } from "../i18n/utils";
 import type { BosKonfYear } from "../program/program";
+import { getProgram } from "../program/programUtils";
 import Layout from "./Layout.astro";
 
 const { frontmatter } = Astro.props;
@@ -19,7 +18,7 @@ const t = useTranslation(Astro.url);
     <div class="markdown-text">
       <slot />
     </div>
-    <Schedule year={year} language={lang} />
+    <Schedule program={program} />
   </main>
   <Sponsors sponsors={program.sponsors} />
 </Layout>

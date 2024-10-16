@@ -4,7 +4,7 @@ export type Program = {
   date: string;
   location: string;
   address: string;
-  locationurl: string;
+  locationUrl: string;
   /**
    * URL to buy tickets
    */
@@ -15,7 +15,9 @@ export type Program = {
 
 export type ProgramEvent = {
   title: string;
+  title_en?: string;
   description: string;
+  description_en?: string;
   speaker?: Speaker;
   image: string;
   from: string;
@@ -26,7 +28,8 @@ export type ProgramEvent = {
 };
 
 export type EventAttachment = {
-  name: "Presentasjon" | string;
+  name: "Presentasjon" | "Presentation" | string;
+  name_en?: string;
   url: string;
 };
 
@@ -35,10 +38,12 @@ export type Sponsor = {
   logo: string;
   url: string;
   description?: string;
+  description_en?: string;
 };
 
 export type Speaker = {
   name: string;
   description: string;
+  description_en?: string;
   imageUrl?: string | undefined;
 };
