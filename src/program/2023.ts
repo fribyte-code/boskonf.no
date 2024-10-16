@@ -4,6 +4,7 @@ const program2023: Program = {
   date: "2024-11-02",
   location: "Kvarteret, Bergen",
   address: "Olav Kyrres gate 49, 5015 Bergen",
+  locationUrl: "https://www.openstreetmap.org/node/6137059358",
   schedule: [
     {
       title: "Dørene åpner",

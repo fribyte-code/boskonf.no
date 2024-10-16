@@ -1,11 +1,22 @@
 import type { BosKonfYear, Program } from "./program";
+import program2023 from "./2023";
+import program2024 from "./2024";
 
 export async function getProgram(year: BosKonfYear, language: "en" | "no") {
-  let json = await import(`./${year}.ts`);
-  return replaceDefaultKeyValWithLanguageKeyValInPlace(
-    json.default as Program,
-    language,
-  );
+  let json: Program;
+  switch (year) {
+    case "2024":
+      json = program2024;
+      break;
+    case "2023":
+      json = program2023;
+      break;
+    default:
+      throw new Error(
+        "Unsupported year, please: 1: Add year to BosKonfYear type 2: add program for that year 3: add import statement here",
+      );
+  }
+  return replaceDefaultKeyValWithLanguageKeyValInPlace(json, language);
 }
 
 /**
