@@ -1,22 +1,14 @@
 ---
 import ScheduleStack from "./ScheduleStack.astro";
-import { useTranslation, type langs } from "../../../i18n/utils";
-import { type BosKonfYear, type Program } from "../../../program/program";
-
-export async function getProgram(year: BosKonfYear, language: "en" | "no") {
-  let json = await import(`../../../program/${year}.${language}.json`);
-  return json.default as Program;
-}
+import { useTranslation } from "../../../i18n/utils";
+import { type Program } from "../../../program/program";
 
 interface Props {
-  year: BosKonfYear;
-  language: keyof typeof langs;
   withTitle?: boolean;
+  program: Program;
 }
 
-const { year, language, withTitle = false } = Astro.props;
-
-const program = await getProgram(year, language);
+const { withTitle = false, program } = Astro.props;
 
 const t = useTranslation(Astro.url);
 ---
