@@ -74,7 +74,7 @@ const program2024: Program = {
     },
     {
       title:
-        "Bluesky & ATProto - The future of social media for the open Internet",
+        "Bluesky & ATProto - Fremtiden for sosiale medier på det åpne internett",
       title_en:
         "Bluesky & ATProto - The future of social media for the open Internet",
       description:
@@ -111,14 +111,15 @@ const program2024: Program = {
       type: "talk",
     },
     {
-      title: "Tale",
-      title_en: "Speech",
-      description: "Ledig tale slot",
-      description_en: "Available speech slot",
+      title: "Distribuere programvare på Linux",
+      title_en: "Distributing software on Linux",
+      description: "Å distribuere programvare på Linux kan være komplisert. I motsetning til andre operativsystemer er tredjepartsapplikasjoner ikke lett kompatible på tvers av distribusjoner på grunn av avhengigheter. Vi vil utforske vanlige Linux API-er, delte biblioteker og verktøy som Snap, Flatpak og flere for å forstå hvordan man trygt kan distribuere apper på tvers av distribusjoner.",
+      description_en: "Distributing software on Linux can be complex. Unlike other OSes, third-party apps aren't easily compatible across distributions due to dependencies. We'll explore common Linux APIs, shared libraries, and tools like Snap, Flatpak, and more, to understand how to distribute apps safely across distros.",
       speaker: {
-        name: "Ukjent taler",
-        description: "Er dette deg? Ta kontakt!",
-        description_en: "Is this you? Get in touch!",
+        name: "Valentin David",
+        description: "Utvikler, Canonical",
+        description_en: "Software Engineer, Canonical",
+        imageUrl: "/speakers/Valentin-David.webp"
       },
       image: "TODO: path to some image in static dir",
       from: "2024-11-07T19:30:00",
@@ -126,14 +127,15 @@ const program2024: Program = {
       type: "talk",
     },
     {
-      title: "Lyntale",
-      title_en: "Lightning Talk",
-      description: "Ledig lyntale slot",
-      description_en: "Available lightning talk slot",
+      title: "",
+      title_en: "",
+      description: "OpenAI holder ChatGPT lukket for å beskytte sin forretningsmodell, mens Meta gjør LLaMa åpen kildekode for å utfordre konkurrentene. Google balanserer mellom åpenhet og kommersielle hensyn. Vi utforsker hva som ligger bak disse strategiske valgene og deres fremtidige påvirkning.",
+      description_en: "OpenAI keeps ChatGPT closed to protect its business, while Meta open-sourced LLaMa to challenge competitors. Google balances openness with commercial interests. This talk explores the strategic reasons behind these decisions and their impact on the future of AI development.",
       speaker: {
-        name: "Ukjent taler",
-        description: "Er dette deg? Ta kontakt!",
-        description_en: "Is this you? Get in touch!",
+        name: "Oskar Nyland",
+        description: "Brukeropplevelseskonsulent, Capgemini",
+        description_en: "User Experience Consultant, Capgemini",
+        imageUrl: "/speakers/Oskar-Nyland.webp"
       },
       image: "TODO: path to some image in static dir",
       from: "2024-11-07T19:50:00",
