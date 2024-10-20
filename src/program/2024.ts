@@ -127,8 +127,8 @@ const program2024: Program = {
       type: "talk",
     },
     {
-      title: "",
-      title_en: "",
+      title: "Hva skal til for at Open Source vinner AI-racet?",
+      title_en: "What will it take for Open Source to win the AI race?",
       description: "OpenAI holder ChatGPT lukket for å beskytte sin forretningsmodell, mens Meta gjør LLaMa åpen kildekode for å utfordre konkurrentene. Google balanserer mellom åpenhet og kommersielle hensyn. Vi utforsker hva som ligger bak disse strategiske valgene og deres fremtidige påvirkning.",
       description_en: "OpenAI keeps ChatGPT closed to protect its business, while Meta open-sourced LLaMa to challenge competitors. Google balances openness with commercial interests. This talk explores the strategic reasons behind these decisions and their impact on the future of AI development.",
       speaker: {
