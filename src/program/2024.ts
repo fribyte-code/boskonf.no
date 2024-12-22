@@ -43,6 +43,12 @@ const program2024: Program = {
       from: "2024-11-07T17:10:00",
       to: "2024-11-07T17:20:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf24-Introduksjon-til-Open-Source-Sindre.pdf",
+        },],
       videoUrl: "https://files.fribyte.no/boskonf/2024/sindre.mp4",
     },
     {
@@ -62,6 +68,12 @@ const program2024: Program = {
       from: "2024-11-07T17:30:00",
       to: "2024-11-07T18:00:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf24-Hvor-er-damene-Caroline-og-Aurora.pdf",
+        },],
       videoUrl:
         "https://files.fribyte.no/boskonf/2024/nav_where_are_the_girls.webm",
     },
@@ -94,6 +106,12 @@ const program2024: Program = {
       from: "2024-11-07T19:00:00",
       to: "2024-11-07T19:20:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf24-Bluesky&ATProto-Fremtiden-for-sosiale-medier-på-det-åpne-internett-Snorre-M-Davoen.pdf",
+        },],
       videoUrl: "https://files.fribyte.no/boskonf/2024/bluesky.mp4",
     },
     {
@@ -113,6 +131,12 @@ const program2024: Program = {
       from: "2024-11-07T19:20:00",
       to: "2024-11-07T19:30:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf24-Bærekraftig-Embalasje-Kent-Inge.pdf",
+        },],
       videoUrl: "https://files.fribyte.no/boskonf/2024/kent_inge.mp4",
     },
     {
@@ -132,6 +156,12 @@ const program2024: Program = {
       from: "2024-11-07T19:30:00",
       to: "2024-11-07T19:50:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf24-Distribuere-programvare-på-Linux-Valentin.pdf",
+        },],
       videoUrl: "https://files.fribyte.no/boskonf/2024/valentin_david.mp4",
     },
     {
@@ -151,6 +181,12 @@ const program2024: Program = {
       from: "2024-11-07T19:50:00",
       to: "2024-11-07T20:00:00",
       type: "talk",
+      attachments: [
+        {
+          name: "Presentasjon",
+          name_en: "Presentation",
+          url: "/speakers/slides/BOSkonf24-Hva-skal-til-for-at-Open-Source-vinner-AI-racet_-Oskar-Nyland.pdf",
+        },],
       videoUrl: "https://files.fribyte.no/boskonf/2024/oskar.webm",
     },
     {
