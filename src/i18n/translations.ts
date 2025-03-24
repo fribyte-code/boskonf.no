@@ -28,11 +28,11 @@ export const no = {
   "footer.text": "BOSkonf, laget av friByte.",
   "sponsors.becomeTitle": "Bli sponsor",
   "sponsors.become":
-    "gir sponsorer muligheten til å nå en bred målgruppe som inkluderer studenter og etablerte utviklere innen bransjen, under Bergen Open Source-konferansen. Vi ønsker selvsagt å gjøre konferansedagen enda mer minneverdig for dem! Dette kan inkludere alt i fra en kort presentasjon av selskapet til tilpassede logo-merkede sokker og godbiter. (Kanskje til og med noen overraskelser som gleder deltakerne🎫🍺?)",
+    "Vi gir sponsorer muligheten til å nå en bred målgruppe som inkluderer studenter og etablerte utviklere innen bransjen. Vi ønsker selvsagt å gjøre konferansedagen enda mer minneverdig for dem! Dette kan inkludere alt i fra en kort presentasjon av selskapet til tilpassede logo-merkede sokker og godbiter. (Kanskje til og med noen overraskelser som gleder deltakerne🎫🍺?)",
   "sponsors.contact1": "Ønsker du også å støtte konferansen som sponsor?",
-  "sponsors.contact2": "Ta kontakt med Sindre på 📨: ",
+  "sponsors.contact2": "Ta kontakt på 📨: ",
   "sponsors.price":
-    "Vi har en sponsorpakke til 5000,- som inneholder følgende ting: ",
+    "Som sponsor av Bergen Open Source er følgende inkludert: ",
   "sponsors.goods": [
     "Vår takknemlighet via SoMe innlegg",
     "Logo på nettside",
@@ -68,12 +68,12 @@ export const en: typeof no = {
   "footer.text": "BOSkonf, created by friByte.",
   "sponsors.becomeTitle": "Become a sponsor",
   "sponsors.become":
-    "gives sponsors the opportunity to reach a broad audience that includes students and established developers in the industry, during the Bergen Open Source conference. We want to make the conference day even more memorable to them! This can include everything from a brief presentation of the company to custom logo-marked socks and goodies. (Perhaps even some surprises that pleases the participants🎫🍺?)",
+    "We give sponsors the opportunity to reach a broad audience that includes students and established developers in the industry. We want to make the conference day even more memorable to them! This can include everything from a brief presentation of the company to custom logo-marked socks and goodies. (Perhaps even some surprises that pleases the participants🎫🍺?)",
   "sponsors.contact1":
     "Do you also want to support the conference as a sponsor?",
-  "sponsors.contact2": "Contact Sindre at 📨: ",
+  "sponsors.contact2": "Contact us at 📨: ",
   "sponsors.price":
-    "We have a sponsor package for 5000,- which includes the following items:",
+    "As a sponsor of Bergen Open Source, the following is included:",
   "sponsors.goods": [
     "Our gratitude via SoMe posts",
     "Logo on website",
